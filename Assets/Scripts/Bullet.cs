@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
         pool.Return(ref pool.bulletQueue, gameObject);
     }
 
-    void Start()
+    void OnEnable()
     {
         StartCoroutine("Recycle");
     }
@@ -33,7 +33,6 @@ public class Bullet : MonoBehaviour
         GameObject effect = pool.Get(ref pool.bulletEffectQueue);
         effect.transform.position = transform.position;
         effect.SetActive(true);
-        effect.GetComponent<BulletDestroy>().StartCoroutine("Recycle");
         pool.Return(ref pool.bulletQueue, gameObject);
     }
 }

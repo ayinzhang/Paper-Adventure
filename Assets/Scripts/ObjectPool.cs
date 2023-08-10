@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    GameObject prefab;
     public GameObject bullet;
     public GameObject bulletEffect;
     [HideInInspector]
@@ -36,7 +35,7 @@ public class ObjectPool : MonoBehaviour
 
     void Start()
     {
-        Push(ref bulletQueue, bullet, 20);
+        Push(ref bulletQueue, bullet, 10);
         Push(ref bulletEffectQueue, bulletEffect, 10);
     }
 }

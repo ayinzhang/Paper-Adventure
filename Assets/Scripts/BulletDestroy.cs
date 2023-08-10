@@ -10,4 +10,9 @@ public class BulletDestroy : MonoBehaviour
         ObjectPool pool = GameObject.Find("ObjectPool").GetComponent<ObjectPool>();
         pool.Return(ref pool.bulletEffectQueue, gameObject);
     }
+
+    void OnEnable()
+    {
+        StartCoroutine("Recycle");
+    }
 }

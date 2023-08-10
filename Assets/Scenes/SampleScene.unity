@@ -123,6 +123,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &32151438 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8170153791961219456, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+  m_PrefabInstance: {fileID: 1443972728}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &198280303 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8170153792821263258, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+  m_PrefabInstance: {fileID: 870642862}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &329231092
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +290,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 4247513983435371724, guid: ef1415b0e30462b479289cb145b9904f, type: 3}
   bulletEffect: {fileID: 5107623273597773852, guid: a9af622dbab6b7d47ad538320a05d5ef, type: 3}
+--- !u!1 &421665474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8170153791668043269, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+  m_PrefabInstance: {fileID: 1443972728}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &421665475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421665474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b83c57153c67bc4fb3fb4d15fc26347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 910822425}
+  handle: {fileID: 32151438}
+  handleLimit: 1
+  Container: {fileID: 910822425}
+  OnTap:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,7 +538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2182
+      value: 1946
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -524,7 +558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043269, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_Name
-      value: Right Joystick
+      value: RightJoystick
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043269, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_IsActive
@@ -558,8 +592,38 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.60784316
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+--- !u!224 &910822425 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8170153792821263258, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+  m_PrefabInstance: {fileID: 1443972728}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &990795710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8170153791668043269, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+  m_PrefabInstance: {fileID: 870642862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &990795711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990795710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b83c57153c67bc4fb3fb4d15fc26347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 198280303}
+  handle: {fileID: 1340533496}
+  handleLimit: 1
+  Container: {fileID: 198280303}
+  OnTap:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!224 &1089418889 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
@@ -744,6 +808,11 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.56
+--- !u!224 &1340533496 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8170153791961219456, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+  m_PrefabInstance: {fileID: 870642862}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1443972728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -837,7 +906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043269, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_Name
-      value: Left Joystick
+      value: LeftJoystick
       objectReference: {fileID: 0}
     - target: {fileID: 8170153791668043269, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
       propertyPath: m_IsActive
