@@ -68,7 +68,7 @@ public class Enemy : MonoBehaviour
             GameObject bullet = pool.Get(ref pool.bulletQueue);
             bullet.transform.position = transform.position + toDir;
             bullet.transform.eulerAngles = GetAngle(toDir.x, toDir.y);
-            bullet.GetComponent<Bullet>().v = 0.1f * toDir;
+            bullet.GetComponent<Bullet>().v = 0.5f * toDir;
             bullet.SetActive(true);
             StartCoroutine("BulletCD");
         }

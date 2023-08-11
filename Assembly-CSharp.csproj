@@ -56,18 +56,12 @@
     <Analyzer Include="D:\VS2019\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Joystick\Scripts\Joysticks\FixedJoystick.cs" />
-    <Compile Include="Assets\Joystick\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Joystick\Scripts\Joysticks\DynamicJoystick.cs" />
-    <Compile Include="Assets\Joystick\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Joystick\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\BulletDestroy.cs" />
     <Compile Include="Assets\Scripts\ObjectPool.cs" />
-    <Compile Include="Assets\Joystick\Scripts\Joysticks\JoystickCtrl.cs" />
-    <Compile Include="Assets\Joystick\Scripts\Joysticks\JoystickComponentCtrl.cs" />
+    <Compile Include="Assets\Scripts\Joystick.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

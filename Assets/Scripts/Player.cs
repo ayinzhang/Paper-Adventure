@@ -9,8 +9,8 @@ public class Player : MonoBehaviour
     bool bulletEnable = true;
     float bulletCD = 0.5f;
     ObjectPool pool;
-    JoystickComponentCtrl leftStick;
-    JoystickComponentCtrl rightStick;
+    Joystick leftStick;
+    Joystick rightStick;
 
     IEnumerator BulletCD()
     {
@@ -38,8 +38,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         pool = GameObject.Find("ObjectPool").GetComponent<ObjectPool>();
-        leftStick = GameObject.Find("LeftJoystick").GetComponent<JoystickComponentCtrl>();
-        rightStick = GameObject.Find("RightJoystick").GetComponent<JoystickComponentCtrl>();
+        leftStick = GameObject.Find("LeftJoystick").GetComponent<Joystick>();
+        rightStick = GameObject.Find("RightJoystick").GetComponent<Joystick>();
     }
 
     void Update()
@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
             Vector3 dir = rightStick.Direction.normalized;
             bullet.transform.position = transform.position + dir;
             bullet.transform.eulerAngles = GetAngle(dir.x, dir.y);
-            bullet.GetComponent<Bullet>().v = 0.1f * dir;
+            bullet.GetComponent<Bullet>().v = 0.5f * dir;
             bullet.SetActive(true);
             StartCoroutine("BulletCD");
         }
