@@ -496,7 +496,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -934,6 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75dee575ac19e864d8f19c5b7ad0483b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 1261555563981962, guid: 24c86df1468884d499ca1d5cb865a6f7, type: 3}
 --- !u!58 &1267379389
 CircleCollider2D:
   m_ObjectHideFlags: 0

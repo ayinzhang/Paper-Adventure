@@ -11,8 +11,9 @@ public class Player : MonoBehaviour
     ObjectPool pool;
     Joystick leftStick;
     Joystick rightStick;
+    public GameObject bullet;
 
-    IEnumerator BulletCD()
+    IEnumerator SetBulletCD()
     {
         bulletEnable = false;
         yield return new WaitForSecondsRealtime(bulletCD);
@@ -30,9 +31,9 @@ public class Player : MonoBehaviour
 
     Vector3 GetAngle(float x, float y)
     {
-        if (x == 0) return new Vector3(0, 0, y > 0 ? Mathf.PI / 2 : - Mathf.PI / 2);
-        else if (x > 0) return new Vector3(0, 0, Mathf.Atan(y / x) / Mathf.PI * 180);
-        else return new Vector3(0, 0, Mathf.Atan(y / x) / Mathf.PI * 180 + 180);
+        if (x == 0) return new Vector3(y > 0 ? -Mathf.PI / 2 : Mathf.PI / 2, 90, 0);
+        else if (x > 0) return new Vector3(-Mathf.Atan(y / x) / Mathf.PI * 180, 90, 0);
+        else return new Vector3(180 - Mathf.Atan(y / x) / Mathf.PI * 180, 90, 0);
     }
 
     void Start()
@@ -47,13 +48,16 @@ public class Player : MonoBehaviour
         transform.position += speed * leftStick.Direction.normalized;
         if(bulletEnable && rightStick.Direction.magnitude > float.Epsilon)
         {
-            GameObject bullet = pool.Get(ref pool.bulletQueue);
+            //GameObject bullet = pool.Get(ref pool.bulletQueue);
+            //Vector3 dir = rightStick.Direction.normalized;
+            //bullet.transform.position = transform.position + dir;
+            //bullet.transform.eulerAngles = GetAngle(dir.x, dir.y);
+            //bullet.GetComponent<Bullet>().v = 0.5f * dir;
+            //bullet.SetActive(true);
+            //StartCoroutine(SetCD(bulletEnable, bulletCD));
             Vector3 dir = rightStick.Direction.normalized;
-            bullet.transform.position = transform.position + dir;
-            bullet.transform.eulerAngles = GetAngle(dir.x, dir.y);
-            bullet.GetComponent<Bullet>().v = 0.5f * dir;
-            bullet.SetActive(true);
-            StartCoroutine("BulletCD");
+            Instantiate(bullet, transform.position, Quaternion.Euler(GetAngle(dir.x, dir.y)));
+            StartCoroutine("SetBulletCD");
         }
     }
 }

@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    IEnumerator BulletCD()
+    IEnumerator SetBulletCD()
     {
         bulletEnable = false;
         yield return new WaitForSecondsRealtime(bulletCD);
@@ -70,7 +70,7 @@ public class Enemy : MonoBehaviour
             bullet.transform.eulerAngles = GetAngle(toDir.x, toDir.y);
             bullet.GetComponent<Bullet>().v = 0.5f * toDir;
             bullet.SetActive(true);
-            StartCoroutine("BulletCD");
+            StartCoroutine("SetBulletCD");
         }
     }
 }
