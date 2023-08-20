@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     int hp = 100;
     float speed = 0.35f;
     bool bulletEnable = true;
-    float bulletCD = 0.5f;
+    float bulletCD = 0.05f;
     ObjectPool pool;
     Joystick leftStick;
     Joystick rightStick;
@@ -39,8 +39,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         pool = GameObject.Find("ObjectPool").GetComponent<ObjectPool>();
-        leftStick = GameObject.Find("LeftJoystick").GetComponent<Joystick>();
-        rightStick = GameObject.Find("RightJoystick").GetComponent<Joystick>();
+        leftStick = GameObject.Find("Left Joystick").GetComponent<Joystick>();
+        rightStick = GameObject.Find("Right Joystick").GetComponent<Joystick>();
     }
 
     void Update()

@@ -22,20 +22,21 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    public GameObject Get(ref Queue<GameObject> q)
+    public GameObject Get(GameObject obj)
     {
-        return q.Dequeue();
+        //return q.Dequeue();
+        return new GameObject();
     }
 
-    public void Return(ref Queue<GameObject> q, GameObject obj)
+    public void Return(GameObject obj)
     {
-        obj.SetActive(false);
-        q.Enqueue(obj);
+        //obj.SetActive(false);
+        //q.Enqueue(obj);
     }
 
     void Start()
     {
-        Push(ref bulletQueue, bullet, 10);
-        Push(ref bulletEffectQueue, bulletEffect, 10);
+        //Push(ref bulletQueue, bullet, 10);
+        //Push(ref bulletEffectQueue, bulletEffect, 10);
     }
 }

@@ -30,7 +30,8 @@ Shader "Hovl/Particles/Add_CenterGlow"
 			ZWrite Off
 			ZTest LEqual
 			
-			Pass {
+			Pass 
+			{
 				CGPROGRAM
 				#pragma vertex vert
 				#pragma fragment frag
