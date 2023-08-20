@@ -58,19 +58,19 @@ public class Enemy : MonoBehaviour
         Vector3 toDir = player.position - transform.position;
         Vector3 tanDir = new Vector3(toDir.y, - toDir.x, toDir.z);
         speedRate = Random.Range(0.5f, 0.7f);
-        if (toDir.magnitude < 10) nearRate = Mathf.SmoothStep(-1, 0, toDir.magnitude / 10);
-        else nearRate = Mathf.SmoothStep(0, 1, toDir.magnitude / 10 - 1);
-        transform.position += speed * speedRate * (nearRate * toDir + leftRight * (1 - Mathf.Abs(nearRate)) * tanDir).normalized;
+        //if (toDir.magnitude < 10) nearRate = Mathf.SmoothStep(-1, 0, toDir.magnitude / 10);
+        //else nearRate = Mathf.SmoothStep(0, 1, toDir.magnitude / 10 - 1);
+        //transform.position += speed * speedRate * (nearRate * toDir + leftRight * (1 - Mathf.Abs(nearRate)) * tanDir).normalized;
 
         toDir = toDir.normalized;
-        if (bulletEnable) 
-        {
-            GameObject bullet = pool.Get(ref pool.bulletQueue);
-            bullet.transform.position = transform.position + toDir;
-            bullet.transform.eulerAngles = GetAngle(toDir.x, toDir.y);
-            bullet.GetComponent<Bullet>().v = 0.5f * toDir;
-            bullet.SetActive(true);
-            StartCoroutine("SetBulletCD");
-        }
+        //if (bulletEnable) 
+        //{
+        //    GameObject bullet = pool.Get(ref pool.bulletQueue);
+        //    bullet.transform.position = transform.position + toDir;
+        //    bullet.transform.eulerAngles = GetAngle(toDir.x, toDir.y);
+        //    bullet.GetComponent<Bullet>().v = 0.5f * toDir;
+        //    bullet.SetActive(true);
+        //    StartCoroutine("SetBulletCD");
+        //}
     }
 }

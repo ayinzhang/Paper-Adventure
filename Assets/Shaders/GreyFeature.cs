@@ -30,7 +30,7 @@ namespace UnityEngine.Rendering.Universal
 
             var stack = VolumeManager.instance.stack;
             grey = stack.GetComponent<Grey>();
-            if (!grey || !grey.IsActive()) { return; }
+            if (!grey) { return; }
 
             var cmd = CommandBufferPool.Get(k_RenderTag);
             Render(cmd, ref renderingData);

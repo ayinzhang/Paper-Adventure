@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
             //bullet.SetActive(true);
             //StartCoroutine(SetCD(bulletEnable, bulletCD));
             Vector3 dir = rightStick.Direction.normalized;
-            Instantiate(bullet, transform.position, Quaternion.Euler(GetAngle(dir.x, dir.y)));
+            Instantiate(bullet, transform.position + dir, Quaternion.Euler(GetAngle(dir.x, dir.y)));
             StartCoroutine("SetBulletCD");
         }
     }

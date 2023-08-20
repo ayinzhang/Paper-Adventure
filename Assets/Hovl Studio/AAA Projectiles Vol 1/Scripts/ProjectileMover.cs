@@ -10,12 +10,12 @@ public class ProjectileMover : MonoBehaviour
     public Vector3 rotationOffset = new Vector3(0, 0, 0);
     public GameObject hit;
     public GameObject flash;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     public GameObject[] Detached;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         if (flash != null)
         {
             var flashInstance = Instantiate(flash, transform.position, Quaternion.identity);
@@ -44,13 +44,13 @@ public class ProjectileMover : MonoBehaviour
 	}
 
     //https ://docs.unity3d.com/ScriptReference/Rigidbody.OnCollisionEnter.html
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         //Lock all axes movement and rotation
-        rb.constraints = RigidbodyConstraints.FreezeAll;
+        rb.constraints = RigidbodyConstraints2D.FreezeAll;
         speed = 0;
 
-        ContactPoint contact = collision.contacts[0];
+        ContactPoint2D contact = collision.contacts[0];
         Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
         Vector3 pos = contact.point + contact.normal * hitOffset;
 
