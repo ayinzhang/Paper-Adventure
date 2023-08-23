@@ -6,19 +6,15 @@ public class Player : MonoBehaviour
 {
     int hp = 100;
     float speed = 0.35f;
-    bool bulletEnable = true;
-    float bulletCD = 0.05f;
+    public int bulletNum = 0;
+    bool isDush = false;
+    public bool isDushCD = false;
+    Rigidbody2D rb;
     ObjectPool pool;
     Joystick leftStick;
     Joystick rightStick;
-    public GameObject bullet;
-
-    IEnumerator SetBulletCD()
-    {
-        bulletEnable = false;
-        yield return new WaitForSecondsRealtime(bulletCD);
-        bulletEnable = true;
-    }
+    public GameObject[] bulletObj;
+    Bullet[] bullet;
 
     public void Hurt(int dmg)
     {
@@ -27,6 +23,22 @@ public class Player : MonoBehaviour
         { 
             Destroy(gameObject); 
         }
+    }
+
+    IEnumerator Dush()
+    {
+        isDush = isDushCD = true;
+        yield return new WaitForSeconds(0.2f);
+        isDush = false;
+        yield return new WaitForSeconds(1.8f);
+        isDushCD = false;
+    }
+
+    IEnumerator BulletCD(int bulletNum)
+    {
+        bullet[bulletNum].enable = false;
+        yield return new WaitForSeconds(bullet[bulletNum].cd);
+        bullet[bulletNum].enable = true;
     }
 
     Vector3 GetAngle(float x, float y)
@@ -38,6 +50,9 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+        bullet = new Bullet[bulletObj.Length];
+        for (int i = 0; i < bulletObj.Length; ++i) bullet[i] = bulletObj[i].GetComponent<Bullet>();
         pool = GameObject.Find("ObjectPool").GetComponent<ObjectPool>();
         leftStick = GameObject.Find("Left Joystick").GetComponent<Joystick>();
         rightStick = GameObject.Find("Right Joystick").GetComponent<Joystick>();
@@ -45,8 +60,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        transform.position += speed * leftStick.Direction.normalized;
-        if(bulletEnable && rightStick.Direction.magnitude > float.Epsilon)
+        rb.velocity = speed * leftStick.Direction.normalized;
+        if(bullet[bulletNum].enable && rightStick.Direction.magnitude > float.Epsilon)
         {
             //GameObject bullet = pool.Get(ref pool.bulletQueue);
             //Vector3 dir = rightStick.Direction.normalized;
@@ -56,8 +71,8 @@ public class Player : MonoBehaviour
             //bullet.SetActive(true);
             //StartCoroutine(SetCD(bulletEnable, bulletCD));
             Vector3 dir = rightStick.Direction.normalized;
-            Instantiate(bullet, transform.position + dir, Quaternion.Euler(GetAngle(dir.x, dir.y)));
-            StartCoroutine("SetBulletCD");
+            Instantiate(bulletObj[bulletNum], transform.position + dir, Quaternion.Euler(GetAngle(dir.x, dir.y)));
+            StartCoroutine("BulletCD", bulletNum);
         }
     }
 }

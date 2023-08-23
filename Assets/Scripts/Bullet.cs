@@ -5,21 +5,15 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public GameObject hit;
-    float recycleTime = 5;
-    float speed = 15f;
-    int damage = 10;
+    public float recycleTime = 5;
+    public float speed = 15f;
+    public bool enable = true;
+    public float cd = 0.5f;
+    public int damage = 10;
     Rigidbody2D rb;
-
-    //IEnumerator Recycle()
-    //{
-    //    yield return new WaitForSeconds(recycleTime);
-    //    ObjectPool pool = GameObject.Find("ObjectPool").GetComponent<ObjectPool>();
-    //    pool.Return(gameObject);
-    //}
 
     void OnEnable()
     {
-        //StartCoroutine("Recycle");
         rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, recycleTime);
     }
