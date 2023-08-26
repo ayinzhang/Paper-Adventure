@@ -21,13 +21,8 @@ public class ParticleCollisionInstance : MonoBehaviour
     {
         part = GetComponent<ParticleSystem>();
     }
-    void Update()
-    {
-        print(transform.position);
-    }
-    void OnParticleCollision2D(GameObject other)
-    {
-        print("11111");
+    void OnParticleCollision(GameObject other)
+    {      
         int numCollisionEvents = part.GetCollisionEvents(other, collisionEvents);     
         for (int i = 0; i < numCollisionEvents; i++)
         {

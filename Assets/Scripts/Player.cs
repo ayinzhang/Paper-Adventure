@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
     bool isDush = false;
     public bool isDushCD = false;
     Rigidbody2D rb;
-    ObjectPool pool;
     Joystick leftStick;
     Joystick rightStick;
     public GameObject[] bulletObj;
@@ -53,7 +52,6 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         bullet = new Bullet[bulletObj.Length];
         for (int i = 0; i < bulletObj.Length; ++i) bullet[i] = bulletObj[i].GetComponent<Bullet>();
-        pool = GameObject.Find("ObjectPool").GetComponent<ObjectPool>();
         leftStick = GameObject.Find("Left Joystick").GetComponent<Joystick>();
         rightStick = GameObject.Find("Right Joystick").GetComponent<Joystick>();
     }
@@ -63,13 +61,6 @@ public class Player : MonoBehaviour
         rb.velocity = speed * leftStick.Direction.normalized;
         if(bullet[bulletNum].enable && rightStick.Direction.magnitude > float.Epsilon)
         {
-            //GameObject bullet = pool.Get(ref pool.bulletQueue);
-            //Vector3 dir = rightStick.Direction.normalized;
-            //bullet.transform.position = transform.position + dir;
-            //bullet.transform.eulerAngles = GetAngle(dir.x, dir.y);
-            //bullet.GetComponent<Bullet>().v = 0.5f * dir;
-            //bullet.SetActive(true);
-            //StartCoroutine(SetCD(bulletEnable, bulletCD));
             Vector3 dir = rightStick.Direction.normalized;
             Instantiate(bulletObj[bulletNum], transform.position + dir, Quaternion.Euler(GetAngle(dir.x, dir.y)));
             StartCoroutine("BulletCD", bulletNum);

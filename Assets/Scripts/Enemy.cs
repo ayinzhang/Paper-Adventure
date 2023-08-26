@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
     float nearRate;
     float speedRate;
     Transform player;
-    ObjectPool pool;
     int hp = 100;
     float speed = 0.35f;
     int leftRight = 1;
@@ -49,7 +48,6 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").transform;
-        pool = GameObject.Find("ObjectPool").GetComponent<ObjectPool>();
         StartCoroutine("ChangeDir");
     }
 
