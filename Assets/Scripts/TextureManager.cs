@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TexturesManager : MonoBehaviour
+public class TextureManager : MonoBehaviour
 {
     Transform cameraTrans;
     Transform[] objTrans;
