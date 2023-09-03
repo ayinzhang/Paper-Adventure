@@ -32,6 +32,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
 
     public void OnDrag(PointerEventData eventData)
     {
+        Transposer.m_XAxis.m_InputAxisName = "";
         Vector2 direction = eventData.position - _joystickCenter;
         inputVector = (direction.magnitude > background.sizeDelta.x / 2f) ? direction.normalized : direction / (background.sizeDelta.x / 2f);
         handle.anchoredPosition = (inputVector * background.sizeDelta.x / 2f) * handleLimit;
