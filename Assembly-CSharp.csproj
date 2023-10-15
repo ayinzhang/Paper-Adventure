@@ -64,7 +64,6 @@
     <Compile Include="Assets\Hovl Studio\AAA Projectiles Vol 1\Scripts\ProjectileMover.cs" />
     <Compile Include="Assets\Scripts\ButtonEvent.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\TextureManager.cs" />
     <Compile Include="Assets\Hovl Studio\AAA Projectiles Vol 1\Scripts\AutoDestroyPS.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\Joystick.cs" />
@@ -76,6 +75,7 @@
     <None Include="Assets\Hovl Studio\AAA Projectiles Vol 1\Shaders\Electricity.shader" />
     <None Include="Assets\Hovl Studio\AAA Projectiles Vol 1\Shaders\Blend_CenterGlow.shader" />
     <None Include="Assets\Hovl Studio\AAA Projectiles Vol 1\Shaders\AddTrail.shader" />
+    <None Include="Assets\Shaders\FollowedTexture.shader" />
     <None Include="Assets\Hovl Studio\AAA Projectiles Vol 1\Shaders\Add_CenterGlow.shader" />
   </ItemGroup>
   <ItemGroup>

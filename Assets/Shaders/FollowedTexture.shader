@@ -1,13 +1,12 @@
-Shader "Grey"
+Shader "FollowedTexture"
 {
     Properties
     {
-        [HideInInspector]
         _MainTex ("Texture", 2D) = "white" {}
+        [Toggle(FOLLOW)]_Follow ("Follow", Int) = 1
     }
     SubShader
     {
-        Cull Off ZWrite Off ZTest Always
         Tags { "RenderPipeline" = "UniversalPipeline" }
 
         Pass
@@ -15,6 +14,7 @@ Shader "Grey"
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            #pragma multi_compile FOLLOW __
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 
@@ -33,25 +33,35 @@ Shader "Grey"
 
             struct v2f
             {
-                float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
+                float2 uv : TEXCOORD0;
             };
 
-            v2f vert (appdata v)
+            v2f vert(appdata v)
             {
                 v2f o;
-                o.vertex = TransformObjectToHClip(v.vertex.xyz);
+                #ifdef FOLLOW
+                    float3 viewer = mul(unity_WorldToObject, float4(_WorldSpaceCameraPos, 1)).xyz;
+                    float3 upDir = float3(0, 1, 0);
+                    float3 normalDir = normalize(float3(viewer.x, 0, viewer.z));
+                    float3 rightDir = normalize(cross(normalDir, upDir));
+                    float3 localPos = rightDir * v.vertex.x + upDir * v.vertex.y + normalDir * v.vertex.z;
+                    o.vertex = TransformObjectToHClip(localPos);
+                #else
+                    o.vertex = TransformObjectToHClip(v.vertex.xyz);
+                #endif
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 return o;
             }
 
-            float4 frag (v2f i) : SV_Target
+            float4 frag(v2f i) : SV_Target
             {
                 float4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv);
-                float luminosity = 0.299f * col.r + 0.587f * col.g + 0.114f * col.b;
-                return float4(luminosity, luminosity, luminosity, col.a);
+                clip(col.a - 0.01);
+                return col;
             }
             ENDHLSL
         }
     }
+    FallBack "Hidden/Shader Graph/FallbackError"
 }
