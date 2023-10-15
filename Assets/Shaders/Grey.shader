@@ -4,6 +4,8 @@ Shader "Grey"
     {
         [HideInInspector]
         _MainTex ("Texture", 2D) = "white" {}
+        [HideInInspector]
+        _Weight ("Weight", Float) = 1
     }
     SubShader
     {
@@ -23,6 +25,7 @@ Shader "Grey"
 
             CBUFFER_START(UnityPerMaterial)
                 float4 _MainTex_ST;
+                float _Weight;
             CBUFFER_END
 
             struct appdata
@@ -48,7 +51,8 @@ Shader "Grey"
             float4 frag (v2f i) : SV_Target
             {
                 float4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv);
-                float luminosity = 0.299f * col.r + 0.587f * col.g + 0.114f * col.b;
+                clip(col.a - 1);
+                float luminosity = 0.299 * col.r + 0.587 * col.g + 0.114 * col.b;
                 return float4(luminosity, luminosity, luminosity, col.a);
             }
             ENDHLSL

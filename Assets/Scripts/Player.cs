@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     int hp = 100;
-    float speed = 1f;
+    float speed = 100;
     public int bulletNum = 0;
     bool isDush = false;
     public bool isDushCD = false;
@@ -58,7 +58,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = speed * (leftStick.Horizontal * transform.right + leftStick.Vertical * transform.forward);
+        rb.velocity = speed * Time.deltaTime * (leftStick.Horizontal * transform.right + leftStick.Vertical * transform.forward);
         //if (bullet[bulletNum].enable && rightStick.Direction.magnitude > float.Epsilon)
         //{
         //    Vector3 dir = rightStick.Direction.normalized;

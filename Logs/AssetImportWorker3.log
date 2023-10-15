@@ -15,7 +15,7 @@ E:/Geometry-Rush
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-1147
+1472
 Successfully changed project path to: E:/Geometry-Rush
 E:/Geometry-Rush
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ E:/Geometry-Rush
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21432] Host "[IP] 192.168.0.220 [Port] 0 [Flags] 2 [Guid] 2810536353 [EditorId] 2810536353 [Version] 1048832 [Id] WindowsEditor(7,AYINZHANG-NB2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11540] Host "[IP] 192.168.0.220 [Port] 0 [Flags] 2 [Guid] 2423747027 [EditorId] 2423747027 [Version] 1048832 [Id] WindowsEditor(7,AYINZHANG-NB2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [21432] Host "[IP] 192.168.0.220 [Port] 0 [Flags] 2 [Guid] 2810536353 [EditorId] 2810536353 [Version] 1048832 [Id] WindowsEditor(7,AYINZHANG-NB2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11540] Host "[IP] 192.168.0.220 [Port] 0 [Flags] 2 [Guid] 2423747027 [EditorId] 2423747027 [Version] 1048832 [Id] WindowsEditor(7,AYINZHANG-NB2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 AS: AutoStreaming module initializing.
-Refreshing native plugins compatible for Editor in 101.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 106.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.29f1c1 (0b77087ad835)
 [Subsystems] Discovering subsystems at path D:/Unity/2021.3.29f1c1/Editor/Data/Resources/UnitySubsystems
@@ -68,93 +68,93 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2021.3.29f1c1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2021.3.29f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2021.3.29f1c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2021.3.29f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/Unity/2021.3.29f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002763 seconds.
+Registered in 0.003900 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 594 ms
-Refreshing native plugins compatible for Editor in 98.70 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 536 ms
+Refreshing native plugins compatible for Editor in 101.12 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.254 seconds
+- Completed reload, in  1.207 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1254ms)
-		BeginReloadAssembly (79ms)
+	ReloadAssembly (1207ms)
+		BeginReloadAssembly (76ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1084ms)
-			LoadAssemblies (76ms)
+		EndReloadAssembly (1028ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (102ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (901ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (848ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (676ms)
+				InitializePlatformSupportModulesInManaged (616ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (99ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (81ms)
-				ProcessInitializeOnLoadMethodAttributes (42ms)
+				RefreshPlugins (101ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (82ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009422 seconds.
+Registered in 0.009499 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\Geometry-Rush\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\Geometry-Rush\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 104.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 102.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.257 seconds
+- Completed reload, in  1.270 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1257ms)
-		BeginReloadAssembly (135ms)
+	ReloadAssembly (1271ms)
+		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1020ms)
-			LoadAssemblies (89ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1059ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (267ms)
+			SetupTypeCache (247ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (539ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (603ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
+				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (105ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (229ms)
-				ProcessInitializeOnLoadMethodAttributes (76ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (102ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (247ms)
+				ProcessInitializeOnLoadMethodAttributes (129ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4895 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (0.8 MB). Loaded Objects now: 5355.
-Memory consumption went from 202.2 MB to 201.4 MB.
-Total: 4.434200 ms (FindLiveObjects: 0.626300 ms CreateObjectMapping: 0.287400 ms MarkObjects: 3.190900 ms  DeleteObjects: 0.327000 ms)
+Unloading 4893 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (0.8 MB). Loaded Objects now: 5351.
+Memory consumption went from 201.7 MB to 201.0 MB.
+Total: 7.718000 ms (FindLiveObjects: 1.016400 ms CreateObjectMapping: 0.554700 ms MarkObjects: 5.642100 ms  DeleteObjects: 0.500100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -170,28 +170,28 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 127697.488420 seconds.
-  path: Assets/Settings/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eecc253734895facb66926253515a97') in 0.064709 seconds 
+  Time since last request: 1395.283087 seconds.
+  path: Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (41).prefab
+  artifactKey: Guid(e24c9a1a4fb8a7f45bf6ac000b47ec8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (41).prefab using Guid(e24c9a1a4fb8a7f45bf6ac000b47ec8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac28acff503c67028cab1fa12fc0450') in 0.114792 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.136389 seconds.
-  path: Assets/Settings/URP-HighFidelity-Renderer.asset
-  artifactKey: Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-HighFidelity-Renderer.asset using Guid(c40be3174f62c4acf8c1216858c64956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b173ea8e8a9e75791abfdca0f96cbef') in 0.004969 seconds 
+  Time since last request: 0.000069 seconds.
+  path: Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (46).prefab
+  artifactKey: Guid(5cfc4e27acf5ffa4e8acd372e005f5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (46).prefab using Guid(5cfc4e27acf5ffa4e8acd372e005f5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a407d16877fc5cbf2070880ed192447e') in 0.057744 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Settings/URP-HighFidelity.asset
-  artifactKey: Guid(7b7fd9122c28c4d15b667c7040e3b3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-HighFidelity.asset using Guid(7b7fd9122c28c4d15b667c7040e3b3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f373e007559208dbd952668fc8601503') in 0.004510 seconds 
+  Time since last request: 0.000054 seconds.
+  path: Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (48).prefab
+  artifactKey: Guid(d4fa6dbffce76d14e9e8d0125f41a08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (48).prefab using Guid(d4fa6dbffce76d14e9e8d0125f41a08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d7b722da0f7ff9f8b78876c2e89b4e') in 0.051246 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Settings/URP-Performant.asset
-  artifactKey: Guid(d0e2fc18fe036412f8223b3b3d9ad574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/URP-Performant.asset using Guid(d0e2fc18fe036412f8223b3b3d9ad574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487870a79fa3f7c27236b295a642ea4f') in 0.006759 seconds 
+  Time since last request: 0.000047 seconds.
+  path: Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (54).prefab
+  artifactKey: Guid(c8b6235ca60803e4e91de6806a1adb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (54).prefab using Guid(c8b6235ca60803e4e91de6806a1adb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09e37eb81f2a4d754e00b9cafc3764b') in 0.066891 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

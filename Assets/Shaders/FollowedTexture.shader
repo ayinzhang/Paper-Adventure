@@ -3,7 +3,7 @@ Shader "FollowedTexture"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        [Toggle(FOLLOW)]_Follow ("Follow", Int) = 1
+        [Toggle]_Follow ("Follow", Int) = 1
     }
     SubShader
     {
@@ -14,7 +14,7 @@ Shader "FollowedTexture"
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #pragma multi_compile FOLLOW __
+            #pragma shader_feature _FOLLOW_ON __
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
 
@@ -40,7 +40,7 @@ Shader "FollowedTexture"
             v2f vert(appdata v)
             {
                 v2f o;
-                #ifdef FOLLOW
+                #ifdef _FOLLOW_ON
                     float3 viewer = mul(unity_WorldToObject, float4(_WorldSpaceCameraPos, 1)).xyz;
                     float3 upDir = float3(0, 1, 0);
                     float3 normalDir = normalize(float3(viewer.x, 0, viewer.z));
@@ -57,11 +57,10 @@ Shader "FollowedTexture"
             float4 frag(v2f i) : SV_Target
             {
                 float4 col = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.uv);
-                clip(col.a - 0.01);
+                clip(col.a - 1);
                 return col;
             }
             ENDHLSL
         }
     }
-    FallBack "Hidden/Shader Graph/FallbackError"
 }

@@ -58,7 +58,7 @@ public class Enemy : MonoBehaviour
         speedRate = Random.Range(0.5f, 0.7f);
         //if (toDir.magnitude < 10) nearRate = Mathf.SmoothStep(-1, 0, toDir.magnitude / 10);
         //else nearRate = Mathf.SmoothStep(0, 1, toDir.magnitude / 10 - 1);
-        //transform.position += speed * speedRate * (nearRate * toDir + leftRight * (1 - Mathf.Abs(nearRate)) * tanDir).normalized;
+        //transform.position += speed * speedRate * Time.deltaTime * (nearRate * toDir + leftRight * (1 - Mathf.Abs(nearRate)) * tanDir).normalized;
 
         toDir = toDir.normalized;
         //if (bulletEnable) 
