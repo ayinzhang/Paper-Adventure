@@ -32,7 +32,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
 
     public void OnDrag(PointerEventData eventData)
     {
-        Transposer.m_XAxis.m_InputAxisName = "";
+        //Transposer.m_XAxis.m_InputAxisName = "";
         Vector2 direction = eventData.position - _joystickCenter;
         inputVector = (direction.magnitude > background.sizeDelta.x / 2f) ? direction.normalized : direction / (background.sizeDelta.x / 2f);
         handle.anchoredPosition = (inputVector * background.sizeDelta.x / 2f) * handleLimit;
@@ -40,7 +40,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Transposer.m_XAxis.m_InputAxisName = "";
+        //Transposer.m_XAxis.m_InputAxisName = "";
         handle.gameObject.SetActive(true);
         background.gameObject.SetActive(true);
         Container.position = eventData.position;
@@ -50,7 +50,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        Transposer.m_XAxis.m_InputAxisName = "Mouse X";
+        //Transposer.m_XAxis.m_InputAxisName = "Mouse X";
         handle.gameObject.SetActive(false);
         background.gameObject.SetActive(false);
         Container.position = this._containerDefaultPosition;

@@ -419,7 +419,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149193505}
-  m_LocalRotation: {x: 0.38268346, y: 0.000000015896617, z: -0.0000000065845946, w: 0.92387956}
+  m_LocalRotation: {x: 0.38268346, y: -0.000000015896624, z: 0.000000006584597, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 3.802, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -599,7 +599,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &253411665
 MonoBehaviour:
@@ -683,14 +683,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273817311}
-  m_LocalRotation: {x: 0.38268346, y: 0.000000015896617, z: -0.0000000065845946, w: 0.92387956}
+  m_LocalRotation: {x: 0.38268346, y: -0.000000015896624, z: 0.000000006584597, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 3.802, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 627721920}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &284475197
 PrefabInstance:
@@ -1246,7 +1246,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &591070881
 GameObject:
@@ -1297,7 +1297,7 @@ Transform:
   - {fileID: 1680737549}
   - {fileID: 1678396341}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &627721919
 GameObject:
@@ -1836,7 +1836,7 @@ Transform:
   m_Children:
   - {fileID: 97113625}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1020762562
 MonoBehaviour:
@@ -2720,8 +2720,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1783971969}
   - component: {fileID: 1783971972}
-  - component: {fileID: 1783971971}
   - component: {fileID: 1783971973}
+  - component: {fileID: 1783971974}
   m_Layer: 5
   m_Name: Left Joystick
   m_TagString: Untagged
@@ -2750,7 +2750,32 @@ RectTransform:
   m_AnchoredPosition: {x: -800, y: -360}
   m_SizeDelta: {x: -1600, y: -720}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1783971971
+--- !u!222 &1783971972
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783971968}
+  m_CullTransparentMesh: 1
+--- !u!114 &1783971973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783971968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9b4de7c6913124f8cc48de44789471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {fileID: 1428742294}
+  handle: {fileID: 929447816}
+  OnTap:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1783971974
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2780,31 +2805,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1783971972
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783971968}
-  m_CullTransparentMesh: 1
---- !u!114 &1783971973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783971968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad9b4de7c6913124f8cc48de44789471, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  background: {fileID: 1428742294}
-  handle: {fileID: 929447816}
-  OnTap:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1785540538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2991,7 +2991,7 @@ Transform:
   - {fileID: 134248963}
   - {fileID: 96178370}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1909105825
 GameObject:

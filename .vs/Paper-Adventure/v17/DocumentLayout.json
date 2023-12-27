@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Paper-Adventure\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|e:\\paper-adventure\\assets\\scripts\\2dgame\\player2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\2dgame\\player2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|e:\\paper-adventure\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player2D.cs",
+              "DocumentMoniker": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\Player2D.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\2DGame\\Player2D.cs",
+              "ToolTip": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\Player2D.cs",
+              "RelativeToolTip": "Assets\\Scripts\\2DGame\\Player2D.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-27T13:17:02.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "E:\\Paper-Adventure\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "E:\\Paper-Adventure\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAADwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-27T11:09:55.786Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
