@@ -71,6 +71,8 @@
     <Compile Include="Assets\Hovl Studio\AAA Projectiles Vol 1\Scripts\AutoDestroyPS.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\Common\Joystick.cs" />
+    <Compile Include="Assets\Scripts\2DGame\BulletEffect2D.cs" />
+    <Compile Include="Assets\Scripts\2DGame\Enemy2D.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Hovl Studio\AAA Projectiles Vol 1\Demo scenes\Readme.txt" />
@@ -81,6 +83,7 @@
     <None Include="Assets\Hovl Studio\AAA Projectiles Vol 1\Shaders\AddTrail.shader" />
     <None Include="Assets\Shaders\FollowedTexture.shader" />
     <None Include="Assets\Hovl Studio\AAA Projectiles Vol 1\Shaders\Add_CenterGlow.shader" />
+    <None Include="Assets\Shaders\2DGame\Ulit2D.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

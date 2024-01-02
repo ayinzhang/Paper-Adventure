@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Bullet2D : MonoBehaviour
 {
-    public float hp = 10, dmg = 10, speed = 0.5f, time = 3;
-    GameManager2D gm;
-    float t;
+    public float hp = 10, dmg = 10, speed = 17, time = 3, cd = 0.5f;
+    public int bulletNum;
+    GameManager2D gm; float t;
 
     void Start()
     {
@@ -30,13 +30,16 @@ public class Bullet2D : MonoBehaviour
 
     void Update()
     {
-        transform.position += speed * transform.right;
-        if ((t += Time.deltaTime) >= time) { t = 0; gm.arrowPool.Release(gameObject); }
+        transform.position += speed * Time.deltaTime * transform.right;
+        if ((t += Time.deltaTime) >= time) { t = 0; gm.bulletPool[bulletNum].Release(gameObject); }
     }
 
     void Recycle()
     {
-        t = 0; 
-        gm.arrowPool.Release(gameObject);
+        t = 0;
+        gm.bulletPool[bulletNum].Release(gameObject);
+        GameObject effect = gm.bulletEffectPool[bulletNum].Get();
+        effect.transform.position = transform.position;
+        effect.GetComponent<BulletEffect2D>().bulletNum = bulletNum;
     }
 }
