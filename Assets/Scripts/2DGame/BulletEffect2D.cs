@@ -5,7 +5,6 @@ using UnityEngine;
 public class BulletEffect2D : MonoBehaviour
 {
     GameManager2D gm;
-    public int bulletNum;
     public float time = 0.5f;
 
     void OnEnable()
@@ -21,6 +20,6 @@ public class BulletEffect2D : MonoBehaviour
     IEnumerator Recycle()
     {
         yield return new WaitForSeconds(time);
-        gm.bulletEffectPool[bulletNum].Release(gameObject);
+        gm.bulletEffectPools[0].Release(gameObject);
     }
 }

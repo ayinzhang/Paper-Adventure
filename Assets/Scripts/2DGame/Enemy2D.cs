@@ -8,26 +8,17 @@ public class Enemy2D : MonoBehaviour
     Transform playerTrans;
     int bulletNum; float dis, subLR;
     public float speed = 10f;
-    public GameObject[] bullet;
-    public (int, float, bool)[] bulletData;
+    public GameObject[] bullets;
+    public (float, bool)[] bulletDatas;
 
     void Start()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager2D>();
         playerTrans = GameObject.Find("Player").transform;
 
-        bulletData = new (int, float, bool)[bullet.Length];
-        for (int i = 0; i < bullet.Length; i++)
-        {
-            for (int j = 0; j < gm.bullet.Length; j++)
-            {
-                if (bullet[i].name == gm.bullet[j].name)
-                {
-                    bulletData[i] = (j, gm.bullet[j].GetComponent<Bullet2D>().cd, true);
-                    break;
-                }
-            }
-        }
+        bulletDatas = new (float, bool)[bullets.Length];
+        for (int i = 0; i < bullets.Length; i++)
+            bulletDatas[i] = (bullets[i].GetComponent<Bullet2D>().cd, true);
 
         StartCoroutine(ChangeDirAndWeapon());
     }
@@ -40,11 +31,12 @@ public class Enemy2D : MonoBehaviour
                subDir = Vector3.Cross(toDir, new Vector3(0, 0, 1));
         transform.position += speed * Time.deltaTime * (fac * toDir + subLR * subFac * subDir);
 
-        if (bulletData[bulletNum].Item3)
+        if (bulletDatas[bulletNum].Item2)
         {
             StartCoroutine(CD(bulletNum));
-            GameObject bullet1 = gm.bulletPool[0].Get();
-            GameObject bullet = gm.bulletPool[bulletData[bulletNum].Item1].Get();
+            GameObject bullet = bulletNum == 0 ? gm.bulletPools[0].Get() : Instantiate(bullets[bulletNum]);
+            bullet.layer = LayerMask.NameToLayer("EnemyBullet");
+            bullet.GetComponent<Bullet2D>().targetTrans = playerTrans;
             bullet.transform.position = transform.position + 1.5f * toDir;
             bullet.transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(new Vector2(1, 0), toDir));
         }
@@ -52,9 +44,9 @@ public class Enemy2D : MonoBehaviour
 
     IEnumerator CD(int bulletNum)
     {
-        bulletData[bulletNum].Item3 = false;
-        yield return new WaitForSeconds(bulletData[bulletNum].Item2);
-        bulletData[bulletNum].Item3 = true;
+        bulletDatas[bulletNum].Item2 = false;
+        yield return new WaitForSeconds(bulletDatas[bulletNum].Item1);
+        bulletDatas[bulletNum].Item2 = true;
     }
 
     IEnumerator ChangeDirAndWeapon()
@@ -63,7 +55,7 @@ public class Enemy2D : MonoBehaviour
         {
             dis = Random.Range(7f, 10f);
             subLR = Random.Range(-1f, 1f);
-            bulletNum = Random.Range(0, bullet.Length);
+            bulletNum = Random.Range(0, bullets.Length);
             yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
         }
     }

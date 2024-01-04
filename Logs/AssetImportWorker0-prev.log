@@ -15,7 +15,7 @@ E:/Paper-Adventure
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-12352
+8463
 Successfully changed project path to: E:/Paper-Adventure
 E:/Paper-Adventure
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ E:/Paper-Adventure
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15684] Host "[IP] 192.168.1.62 [Port] 0 [Flags] 2 [Guid] 4102345042 [EditorId] 4102345042 [Version] 1048832 [Id] WindowsEditor(7,AYINZHANG-NB2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [7436] Host "[IP] 192.168.1.62 [Port] 0 [Flags] 2 [Guid] 1354027600 [EditorId] 1354027600 [Version] 1048832 [Id] WindowsEditor(7,AYINZHANG-NB2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [15684] Host "[IP] 192.168.1.62 [Port] 0 [Flags] 2 [Guid] 4102345042 [EditorId] 4102345042 [Version] 1048832 [Id] WindowsEditor(7,AYINZHANG-NB2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7436] Host "[IP] 192.168.1.62 [Port] 0 [Flags] 2 [Guid] 1354027600 [EditorId] 1354027600 [Version] 1048832 [Id] WindowsEditor(7,AYINZHANG-NB2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 144.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 118.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
 [Subsystems] Discovering subsystems at path D:/Unity/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -68,79 +68,79 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2021.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2021.3.33f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/Unity/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002272 seconds.
+Registered in 0.002230 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1725 ms
-Refreshing native plugins compatible for Editor in 116.31 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 1195 ms
+Refreshing native plugins compatible for Editor in 113.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.477 seconds
+- Completed reload, in  1.960 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2478ms)
-		BeginReloadAssembly (105ms)
+	ReloadAssembly (1961ms)
+		BeginReloadAssembly (109ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (2281ms)
-			LoadAssemblies (104ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1758ms)
+			LoadAssemblies (108ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (106ms)
+			SetupTypeCache (118ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (2104ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (1570ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (1813ms)
+				InitializePlatformSupportModulesInManaged (1285ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (116ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (123ms)
-				ProcessInitializeOnLoadMethodAttributes (49ms)
+				RefreshPlugins (114ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (119ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004436 seconds.
+Registered in 0.004048 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\Paper-Adventure\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\Paper-Adventure\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 114.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 110.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.361 seconds
+- Completed reload, in  1.352 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1361ms)
-		BeginReloadAssembly (129ms)
+	ReloadAssembly (1353ms)
+		BeginReloadAssembly (145ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1121ms)
-			LoadAssemblies (104ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1106ms)
+			LoadAssemblies (113ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (291ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (81ms)
-			SetupLoadedEditorAssemblies (620ms)
+			SetupTypeCache (290ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (603ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
+				InitializePlatformSupportModulesInManaged (20ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (115ms)
-				BeforeProcessingInitializeOnLoad (125ms)
-				ProcessInitializeOnLoadAttributes (270ms)
-				ProcessInitializeOnLoadMethodAttributes (85ms)
+				RefreshPlugins (111ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (281ms)
+				ProcessInitializeOnLoadMethodAttributes (81ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -148,13 +148,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4900 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (0.8 MB). Loaded Objects now: 5357.
-Memory consumption went from 201.2 MB to 200.4 MB.
-Total: 4.778100 ms (FindLiveObjects: 0.455900 ms CreateObjectMapping: 0.269500 ms MarkObjects: 3.136300 ms  DeleteObjects: 0.914100 ms)
+Unloading 4903 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (0.8 MB). Loaded Objects now: 5360.
+Memory consumption went from 201.3 MB to 200.6 MB.
+Total: 3.795500 ms (FindLiveObjects: 0.583100 ms CreateObjectMapping: 0.273500 ms MarkObjects: 2.606000 ms  DeleteObjects: 0.331300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -171,437 +171,117 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1004451.365768 seconds.
+  Time since last request: 1304452.341126 seconds.
   path: Assets/Prefabs/2DGame/Player.prefab
   artifactKey: Guid(bc422eb2670b8a746bac26739a126cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Prefabs/2DGame/Player.prefab using Guid(bc422eb2670b8a746bac26739a126cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff4a69926c92fd79a42a2eca1309dcf') in 0.319535 seconds 
-Number of asset objects unloaded after import = 20
+Start importing Assets/Prefabs/2DGame/Player.prefab using Guid(bc422eb2670b8a746bac26739a126cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '634427bf2d9df24c647447faed0f9845') in 0.373769 seconds 
+Number of asset objects unloaded after import = 33
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
+  Time since last request: 0.000049 seconds.
   path: Assets/Prefabs/2DGame/Enemy.prefab
   artifactKey: Guid(bf345a551432cfa40a572b5d0d5fab75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Prefabs/2DGame/Enemy.prefab using Guid(bf345a551432cfa40a572b5d0d5fab75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389726032c540a40c1d78175217d32dc') in 0.014592 seconds 
-Number of asset objects unloaded after import = 10
+Start importing Assets/Prefabs/2DGame/Enemy.prefab using Guid(bf345a551432cfa40a572b5d0d5fab75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171001a52e4fd00d077351fdf94fbcfe') in 0.017533 seconds 
+Number of asset objects unloaded after import = 9
 ========================================================================
 Received Import Request.
-  Time since last request: 1209.017722 seconds.
+  Time since last request: 124.218690 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(9d8f85f2112257d48982a6310b466242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs using Guid(9d8f85f2112257d48982a6310b466242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82582decd70519072f5f8051528afaeb') in 0.002109 seconds 
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.038994 seconds.
   path: Assets/Prefabs/Block.prefab
   artifactKey: Guid(40e3f846d7ab7f944a10e3fd239ef23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Prefabs/Block.prefab using Guid(40e3f846d7ab7f944a10e3fd239ef23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a734ad16ada0e3c4d512b4ad083ae276') in 0.640299 seconds 
+Start importing Assets/Prefabs/Block.prefab using Guid(40e3f846d7ab7f944a10e3fd239ef23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a734ad16ada0e3c4d512b4ad083ae276') in 0.581115 seconds 
 Number of asset objects unloaded after import = 27
 ========================================================================
 Received Import Request.
-  Time since last request: 2.609714 seconds.
+  Time since last request: 2.570998 seconds.
   path: Assets/Scripts
   artifactKey: Guid(01462f208fa424e4f9748f4bd7e99cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts using Guid(01462f208fa424e4f9748f4bd7e99cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6288ef6e53548eccc6c14507ab93c335') in 0.001800 seconds 
+Start importing Assets/Scripts using Guid(01462f208fa424e4f9748f4bd7e99cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6288ef6e53548eccc6c14507ab93c335') in 0.002215 seconds 
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1.933576 seconds.
+  Time since last request: 1.350470 seconds.
   path: Assets/Scripts/2DGame
   artifactKey: Guid(356b5ec82af2fa44688e3101e36f10fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/2DGame using Guid(356b5ec82af2fa44688e3101e36f10fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3671ff345880de90ab30400c417bc8') in 0.002749 seconds 
+Start importing Assets/Scripts/2DGame using Guid(356b5ec82af2fa44688e3101e36f10fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3671ff345880de90ab30400c417bc8') in 0.002162 seconds 
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 353.214862 seconds.
-  path: Assets/Textures/Common/AllAxis_Ridged.png
-  artifactKey: Guid(54628aafa20f64b40ae661038ee7abf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.997861 seconds.
+  path: Assets/Scripts/2DGame/Bullet2D.cs
+  artifactKey: Guid(df276a9ac25049e4987baf3bf5c2eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Common/AllAxis_Ridged.png using Guid(54628aafa20f64b40ae661038ee7abf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c41eb9201bbce4177892e44738afc1') in 0.099582 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Scripts/2DGame/Bullet2D.cs using Guid(df276a9ac25049e4987baf3bf5c2eaf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31670a2578282619b11c06937aed77c8') in 0.012618 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.317701 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Arrow5.png
-  artifactKey: Guid(b6e024007817605439aba175cc8b3c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Arrow5.png using Guid(b6e024007817605439aba175cc8b3c1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907f20e6e12493210d011dd450fb2f06') in 0.013803 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Concrete slab_MetallicSmoothness.png
-  artifactKey: Guid(a685c8f461a651a46a2631ea3decafae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Concrete slab_MetallicSmoothness.png using Guid(a685c8f461a651a46a2631ea3decafae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d8d93f32a2194933ae37b68aab9b17d') in 0.015317 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Dagger2.png
-  artifactKey: Guid(577f7d7386a228f489ca3443dc8f3182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Dagger2.png using Guid(577f7d7386a228f489ca3443dc8f3182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902ac267f972f5b5fc07ce9834ab9321') in 0.010753 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flare4.png
-  artifactKey: Guid(fe05455264c0eda4dabeb02e41d98557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flare4.png using Guid(fe05455264c0eda4dabeb02e41d98557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540ae2fd2e157d954a6b08b9734a8924') in 0.012104 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Debris2.png
-  artifactKey: Guid(c6fbbfdbb4d88e4458046eec6645c0d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Debris2.png using Guid(c6fbbfdbb4d88e4458046eec6645c0d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9af9f719f80ce59a434fbb0fda1b921') in 0.013254 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Textures/2DGame/Enemy.png
-  artifactKey: Guid(20ffe5c85760b6746bcc3bbe36f18039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/2DGame/Enemy.png using Guid(20ffe5c85760b6746bcc3bbe36f18039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28133cd5437f8ba38c45e18f93828da') in 0.028046 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Blackthornprod/100 Fantasy Characters Pack/Sprites/bg9.png
-  artifactKey: Guid(a066e0ac0e4cd1c46a12358f9729b01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Blackthornprod/100 Fantasy Characters Pack/Sprites/bg9.png using Guid(a066e0ac0e4cd1c46a12358f9729b01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9492bf1073ea8d72bc4deba11e0c427c') in 0.117264 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Circle18.png
-  artifactKey: Guid(aaab2c059dc876441ab6a1b07f6f8d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Circle18.png using Guid(aaab2c059dc876441ab6a1b07f6f8d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '200e26795d41ce28ce82b2a041fcbd4a') in 0.013445 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Circle41.png
-  artifactKey: Guid(4e1d7245ae7321c4ba834b915eef99e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Circle41.png using Guid(4e1d7245ae7321c4ba834b915eef99e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4328a3f21ee8c51564fd73ff873f9282') in 0.010656 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flare3.png
-  artifactKey: Guid(078c04d2e791c3c4191403a4cbf7bc22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flare3.png using Guid(078c04d2e791c3c4191403a4cbf7bc22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5f0537698df2f69f03896cd4e4a48b') in 0.013017 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flare6.png
-  artifactKey: Guid(fb60f4826d03c644c80d10aace44bfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flare6.png using Guid(fb60f4826d03c644c80d10aace44bfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2938fd291c8b0cb1eab1656111be91') in 0.010115 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Fire1.png
-  artifactKey: Guid(6ec7de1e2d58baf45ac3071983c20993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Fire1.png using Guid(6ec7de1e2d58baf45ac3071983c20993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4329690ad07fd2b90645018d8794a5') in 0.012831 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Arrow6.png
-  artifactKey: Guid(b795ce77a23ce3a4e9af98d525b1b6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Arrow6.png using Guid(b795ce77a23ce3a4e9af98d525b1b6b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8af34f7a5aef577ab765b957c6c882c') in 0.009298 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Concrete slab.png
-  artifactKey: Guid(1b13dc101cf2ac7418019fd776161658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Concrete slab.png using Guid(1b13dc101cf2ac7418019fd776161658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83d282be33e47fff78ad2963b612c94f') in 0.011601 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Arrow2.png
-  artifactKey: Guid(3ac26915899365748b83c209f8c34e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Arrow2.png using Guid(3ac26915899365748b83c209f8c34e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7546ee45c39c979218c6ef1ce47f9bcb') in 0.017967 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Circle38.png
-  artifactKey: Guid(4d41495f05e1e7a46b981c43293cb751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Circle38.png using Guid(4d41495f05e1e7a46b981c43293cb751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21dba9472d7c44b2165eee9525d09b0') in 0.010930 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.721226 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flash3.png
-  artifactKey: Guid(0ce86839734cb09488155f80acfb8eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flash3.png using Guid(0ce86839734cb09488155f80acfb8eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bdde170a64e0bcf530be18e46a3515') in 0.010517 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flash7.png
-  artifactKey: Guid(bec5c7c44540e99458f061f069c981a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flash7.png using Guid(bec5c7c44540e99458f061f069c981a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799c89df93de23bea3f99d42be5173b0') in 0.010247 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flash18.png
-  artifactKey: Guid(81916edcbeb08d545ac57cd728c871a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Flash18.png using Guid(81916edcbeb08d545ac57cd728c871a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a1d71ff8a5f9d4bc5c76b46578d3ef') in 0.011292 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.377363 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Gradient9.png
-  artifactKey: Guid(e505e649e0a8d5045985b89a5176bdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Gradient9.png using Guid(e505e649e0a8d5045985b89a5176bdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4103a4823a5bfc8fd406140012806ac') in 0.012711 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/HandPaintedLightning2.png
-  artifactKey: Guid(e1f5daa4611af4844a03ec5a45012456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/HandPaintedLightning2.png using Guid(e1f5daa4611af4844a03ec5a45012456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a28f4d104d8b9f83a9f489e56f6190') in 0.014974 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Textures/grass_1_Emission 2 -02.png
-  artifactKey: Guid(3eca0706b29cd1443b06e7d2bdaea11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/grass_1_Emission 2 -02.png using Guid(3eca0706b29cd1443b06e7d2bdaea11f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20f42047f96e0765ba46aeebd7d1f42') in 0.013035 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.008170 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Heart3.png
-  artifactKey: Guid(a6dea954fdcd12549a7238623e605ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Heart3.png using Guid(a6dea954fdcd12549a7238623e605ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d245873474c30df0bff8792d6617f0') in 0.010868 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Demo scenes/Lightmap-0_comp_dir.png
-  artifactKey: Guid(e620f791dd3aad0468c5433f169817c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Demo scenes/Lightmap-0_comp_dir.png using Guid(e620f791dd3aad0468c5433f169817c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b38227f596f33389ef6bb833d08f83a8') in 0.011546 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Demo scenes/Lightmap-2_comp_dir.png
-  artifactKey: Guid(ef821dfa7c9bf544aa760c25c610cb6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Demo scenes/Lightmap-2_comp_dir.png using Guid(ef821dfa7c9bf544aa760c25c610cb6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115a50fb3d6eb4d7d865cb1d0cc6cbc8') in 0.009721 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Demo scenes/Lightmap-1_comp_dir.png
-  artifactKey: Guid(fa6be30dfbe92314c8d176a8eec4257b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Demo scenes/Lightmap-1_comp_dir.png using Guid(fa6be30dfbe92314c8d176a8eec4257b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac6d863b2efd46201e7a839be2e0623') in 0.011754 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Demo scenes/Lightmap-0_comp_light.exr
-  artifactKey: Guid(bedbfe6fe9ff7914aad490bf2e9e3283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Demo scenes/Lightmap-0_comp_light.exr using Guid(bedbfe6fe9ff7914aad490bf2e9e3283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98ab1397be00fefec6c80942e362119') in 0.023064 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Mask33.png
-  artifactKey: Guid(17784056104067443abd4a30f329b1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Mask33.png using Guid(17784056104067443abd4a30f329b1a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e599e9e38002d11027651fbf313e47') in 0.010837 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Textures/mb_texture.png
-  artifactKey: Guid(3a2601f25dd4cc446abcfda8bb1db790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/mb_texture.png using Guid(3a2601f25dd4cc446abcfda8bb1db790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '939767be914ed6d1e1af04d7d5b841f4') in 0.012705 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Textures/lights.png
-  artifactKey: Guid(b077b998ce0eea042a532776810b73e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/lights.png using Guid(b077b998ce0eea042a532776810b73e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a0c2b53cb2d6ad9e210900676ab847') in 0.008898 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.646490 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/MuzzleFlash3.png
-  artifactKey: Guid(e8ca94d9ed7859e4685246ec93292fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/MuzzleFlash3.png using Guid(e8ca94d9ed7859e4685246ec93292fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd818c6aaefa70cdb33f0f294f8c75976') in 0.012249 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Noise41.png
-  artifactKey: Guid(1eae6143ce30e2849b37136524e197f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Noise41.png using Guid(1eae6143ce30e2849b37136524e197f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c4bbd1f7e5ddd00b944f89c0c52641') in 0.012816 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Noise34.png
-  artifactKey: Guid(3f1d4fadb37c37e4488860109d7dce4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Noise34.png using Guid(3f1d4fadb37c37e4488860109d7dce4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eaf5303d3a81a4799257a8014c657f7') in 0.011940 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.141967 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Noise84.png
-  artifactKey: Guid(ff6d0479db5058f42878d15454bd3fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Noise84.png using Guid(ff6d0479db5058f42878d15454bd3fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec765c66924e0e44b362266c9f0bd16e') in 0.011555 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Point20.png
-  artifactKey: Guid(83f21c9be4ebd1349b5baf6f73c7d8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Point20.png using Guid(83f21c9be4ebd1349b5baf6f73c7d8d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '928c23511c6f2bd7a49f43535cac5a19') in 0.012049 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Point19.png
-  artifactKey: Guid(4b0225a5290cbe540bc56e26a8682db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Point19.png using Guid(4b0225a5290cbe540bc56e26a8682db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a1bde1596da9e3e46d59e8a0217491') in 0.012806 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.019835 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Demo scenes/ReflectionProbe-0.exr
-  artifactKey: Guid(eea823e4f8384c043ac514026f3ac126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Demo scenes/ReflectionProbe-0.exr using Guid(eea823e4f8384c043ac514026f3ac126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d2375df3bddcae6513616d7d3c4c7c') in 0.028317 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Semicircle6.png
-  artifactKey: Guid(77c34709cf851d94d811f77a97e6ecb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Semicircle6.png using Guid(77c34709cf851d94d811f77a97e6ecb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8adf315d73c359e66aa1ec09aa0f2fde') in 0.011326 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.344346 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Smoke12.png
-  artifactKey: Guid(d2d212ea9b69a8345bd6b7debdf07fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Smoke12.png using Guid(d2d212ea9b69a8345bd6b7debdf07fcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9aad02c4e9b1f3f69860ed663d6d6a7') in 0.016763 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Snow4.png
-  artifactKey: Guid(2dbe75cf06e0c6842b4eae60ddda63ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Snow4.png using Guid(2dbe75cf06e0c6842b4eae60ddda63ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ef85639923302501657db16b4645d9') in 0.012634 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.054746 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail5.png
-  artifactKey: Guid(83846a180913c7241b6e6fee8ecd9dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail5.png using Guid(83846a180913c7241b6e6fee8ecd9dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f910d8416bf2be495bef619c2c84455') in 0.011581 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail25.png
-  artifactKey: Guid(63e298374ab0c384ebe243e627781d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail25.png using Guid(63e298374ab0c384ebe243e627781d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0704559738f7908687eb0093cfa2af1') in 0.009394 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail21.png
-  artifactKey: Guid(0d1fb353c40bd6345af42a3b4f0bdb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail21.png using Guid(0d1fb353c40bd6345af42a3b4f0bdb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e96380670ddd24e02a46d3ed055f5b') in 0.007873 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.829499 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail37.png
-  artifactKey: Guid(b66af181bcb0e034da96b388eca6fffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail37.png using Guid(b66af181bcb0e034da96b388eca6fffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18bf648bfba6f247c0a7fb23e6aa314') in 0.014484 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail44.png
-  artifactKey: Guid(1f4a0a8d81984c94e92c9bb247a9015b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail44.png using Guid(1f4a0a8d81984c94e92c9bb247a9015b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c38f3a99a750f1cbb11a1f53da2e220a') in 0.011038 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail74.png
-  artifactKey: Guid(93aaf95761be6c54aa05873a6ae0bee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/Trail74.png using Guid(93aaf95761be6c54aa05873a6ae0bee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97adb0e48c9cb875c776606b33170c5') in 0.008157 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.019405 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/TrailPart4.png
-  artifactKey: Guid(434ed0593dbfa5249868ea6562816d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/TrailPart4.png using Guid(434ed0593dbfa5249868ea6562816d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43538c900ac73750f979851cf844fa22') in 0.010120 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/WaterSplash2.PNG
-  artifactKey: Guid(83e7e28af5ce6e447971585469a133fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Textures/WaterSplash2.PNG using Guid(83e7e28af5ce6e447971585469a133fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9704086906fe0fd1d323318b918fd27') in 0.014196 seconds 
-Number of asset objects unloaded after import = 2
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003425 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Paper-Adventure\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Paper-Adventure\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.232 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1232ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (977ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (297ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (447ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (250ms)
+				ProcessInitializeOnLoadMethodAttributes (79ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4779 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (377.8 KB). Loaded Objects now: 5443.
+Memory consumption went from 197.1 MB to 196.8 MB.
+Total: 3.411000 ms (FindLiveObjects: 0.547700 ms CreateObjectMapping: 0.356700 ms MarkObjects: 2.402600 ms  DeleteObjects: 0.102300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -5,8 +5,8 @@ using UnityEngine;
 public class GameManager2D : MonoBehaviour
 {
     static GameManager2D _instance;
-    public ObjectPool[] bulletPool, bulletEffectPool;
-    public GameObject[] bullet, bulletEffect;
+    public ObjectPool[] bulletPools, bulletEffectPools;
+    public GameObject[] bullets, bulletEffects;
 
     public static GameManager2D instance
     {
@@ -19,14 +19,14 @@ public class GameManager2D : MonoBehaviour
 
     void Start()
     {
-        bulletPool = new ObjectPool[bullet.Length];
-        bulletEffectPool = new ObjectPool[bullet.Length];
+        bulletPools = new ObjectPool[bullets.Length];
+        bulletEffectPools = new ObjectPool[bullets.Length];
 
-        for (int i = 0; i < bullet.Length; i++)
+        for (int i = 0; i < bullets.Length; i++)
         {
-            bullet[i].GetComponent<Bullet2D>().bulletNum = i;
-            bulletPool[i] = new ObjectPool(bullet[i]); 
-            bulletEffectPool[i] = new ObjectPool(bulletEffect[i]);
+            bullets[i].GetComponent<Bullet2D>().bulletNum = i;
+            bulletPools[i] = new ObjectPool(bullets[i]); 
+            bulletEffectPools[i] = new ObjectPool(bulletEffects[i]);
         }
     }
 }

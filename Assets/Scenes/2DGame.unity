@@ -268,9 +268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6987b6da993e3b14dbd2c14d1aa46184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet:
+  bullets:
   - {fileID: 5724412182872618077, guid: 2e9662a1b228d364da2cea17cc9bffa1, type: 3}
-  bulletEffect:
+  bulletEffects:
   - {fileID: 465026004113273829, guid: f9476ccf03dba214cac258444da19407, type: 3}
 --- !u!1 &402486973
 GameObject:
@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  bullet:
+  bullets:
   - {fileID: 5724412182872618077, guid: 2e9662a1b228d364da2cea17cc9bffa1, type: 3}
 --- !u!1 &1406315151
 GameObject:
@@ -1386,8 +1386,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1780570159921099756, guid: bf345a551432cfa40a572b5d0d5fab75,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780570159921099756, guid: bf345a551432cfa40a572b5d0d5fab75,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1780570159921099756, guid: bf345a551432cfa40a572b5d0d5fab75,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf345a551432cfa40a572b5d0d5fab75, type: 3}
@@ -1458,10 +1468,48 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6174390132675896163, guid: bc422eb2670b8a746bac26739a126cbd,
+        type: 3}
+      propertyPath: bulletNum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6174390132675896163, guid: bc422eb2670b8a746bac26739a126cbd,
+        type: 3}
+      propertyPath: bullet.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6174390132675896163, guid: bc422eb2670b8a746bac26739a126cbd,
+        type: 3}
+      propertyPath: bullets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6174390132675896163, guid: bc422eb2670b8a746bac26739a126cbd,
+        type: 3}
+      propertyPath: bullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 1360840370939493006, guid: a7b0de1bdecad5741857bb1387ac91f4,
+        type: 3}
+    - target: {fileID: 6174390132675896163, guid: bc422eb2670b8a746bac26739a126cbd,
+        type: 3}
+      propertyPath: bullets.Array.data[0]
+      value: 
+      objectReference: {fileID: 5724412182872618077, guid: 2e9662a1b228d364da2cea17cc9bffa1,
+        type: 3}
+    - target: {fileID: 6174390132675896163, guid: bc422eb2670b8a746bac26739a126cbd,
+        type: 3}
+      propertyPath: bullets.Array.data[1]
+      value: 
+      objectReference: {fileID: 1360840370939493006, guid: a7b0de1bdecad5741857bb1387ac91f4,
+        type: 3}
     - target: {fileID: 6174390132675896164, guid: bc422eb2670b8a746bac26739a126cbd,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6174390132675896164, guid: bc422eb2670b8a746bac26739a126cbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6174390132675896164, guid: bc422eb2670b8a746bac26739a126cbd,
         type: 3}
