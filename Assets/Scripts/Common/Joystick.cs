@@ -23,8 +23,8 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
 
     void Start()
     {
-        handle.gameObject.SetActive(false);
-        background.gameObject.SetActive(false);
+        //handle.gameObject.SetActive(false);
+        //background.gameObject.SetActive(false);
         Container = GetComponent<RectTransform>();
         Transposer = GameObject.Find("CM vcam").GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineOrbitalTransposer>();
         this._containerDefaultPosition = this.Container.position;
@@ -41,8 +41,8 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
     public void OnPointerDown(PointerEventData eventData)
     {
         //Transposer.m_XAxis.m_InputAxisName = "";
-        handle.gameObject.SetActive(true);
-        background.gameObject.SetActive(true);
+        //handle.gameObject.SetActive(true);
+        //background.gameObject.SetActive(true);
         Container.position = eventData.position;
         handle.anchoredPosition = Vector2.zero;
         _joystickCenter = eventData.position;
@@ -51,8 +51,8 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
     public void OnPointerUp(PointerEventData eventData)
     {
         //Transposer.m_XAxis.m_InputAxisName = "Mouse X";
-        handle.gameObject.SetActive(false);
-        background.gameObject.SetActive(false);
+        //handle.gameObject.SetActive(false);
+        //background.gameObject.SetActive(false);
         Container.position = this._containerDefaultPosition;
         handle.anchoredPosition = Vector2.zero;
         inputVector = Vector2.zero;

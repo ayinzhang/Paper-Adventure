@@ -1,0 +1,623 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.33f1 (ee5a2aa03ab2) revision 15620650'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 15741 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\2021.3.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+E:/Paper-Adventure
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+11170
+Successfully changed project path to: E:/Paper-Adventure
+E:/Paper-Adventure
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [26456] Host "[IP] 192.168.1.62 [Port] 0 [Flags] 2 [Guid] 951733211 [EditorId] 951733211 [Version] 1048832 [Id] WindowsEditor(7,AYINZHANG-NB2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [26456] Host "[IP] 192.168.1.62 [Port] 0 [Flags] 2 [Guid] 951733211 [EditorId] 951733211 [Version] 1048832 [Id] WindowsEditor(7,AYINZHANG-NB2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
+Refreshing native plugins compatible for Editor in 103.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Paper-Adventure/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   NVIDIA
+    VRAM:     3950 MB
+    Driver:   31.0.15.3114
+Initialize mono
+Mono path[0] = 'D:/Unity/2021.3.33f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56884
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/2021.3.33f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002065 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 436 ms
+Refreshing native plugins compatible for Editor in 101.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.110 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1111ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (939ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (107ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (763ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (517ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (102ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (98ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004135 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Paper-Adventure\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Paper-Adventure\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 105.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.207 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1207ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (994ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (258ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (545ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (106ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (245ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4903 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (0.8 MB). Loaded Objects now: 5361.
+Memory consumption went from 201.3 MB to 200.5 MB.
+Total: 4.184400 ms (FindLiveObjects: 0.597400 ms CreateObjectMapping: 0.221700 ms MarkObjects: 3.022500 ms  DeleteObjects: 0.340500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003335 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Paper-Adventure\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Paper-Adventure\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.202 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1203ms)
+		BeginReloadAssembly (151ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (950ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (302ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (448ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (240ms)
+				ProcessInitializeOnLoadMethodAttributes (88ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4771 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (0.8 MB). Loaded Objects now: 5377.
+Memory consumption went from 191.4 MB to 190.6 MB.
+Total: 4.249800 ms (FindLiveObjects: 0.527500 ms CreateObjectMapping: 0.259500 ms MarkObjects: 3.131500 ms  DeleteObjects: 0.329500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1372416.100224 seconds.
+  path: Assets/Prefabs/2DGame/Arror.prefab
+  artifactKey: Guid(2e9662a1b228d364da2cea17cc9bffa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Prefabs/2DGame/Arror.prefab using Guid(2e9662a1b228d364da2cea17cc9bffa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1906f2c212e6f43a189fc45656081c84') in 0.285046 seconds 
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005615 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\Paper-Adventure\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\Paper-Adventure\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.546 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1547ms)
+		BeginReloadAssembly (437ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (52ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (213ms)
+		EndReloadAssembly (1005ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (314ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (433ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (246ms)
+				ProcessInitializeOnLoadMethodAttributes (80ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4777 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (377.8 KB). Loaded Objects now: 5458.
+Memory consumption went from 196.6 MB to 196.2 MB.
+Total: 3.973200 ms (FindLiveObjects: 0.490900 ms CreateObjectMapping: 0.367600 ms MarkObjects: 2.956700 ms  DeleteObjects: 0.156100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 13578.950993 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Arrow3bcg.mat
+  artifactKey: Guid(6e3575b5e481bdb459b64fc1c0f445be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Arrow3bcg.mat using Guid(6e3575b5e481bdb459b64fc1c0f445be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4ce3a68a27a06194a377671345caba') in 0.274430 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.152784 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Arrow5bcg.mat
+  artifactKey: Guid(387b0f96f65ecca408bd6a3d87aa10f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Arrow5bcg.mat using Guid(387b0f96f65ecca408bd6a3d87aa10f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f365052c6d2a6f973f521951fe4056c8') in 0.080218 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Circle17cg.mat
+  artifactKey: Guid(f75fa4eaa4fda8c4d91ab4fefcdb3d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Circle17cg.mat using Guid(f75fa4eaa4fda8c4d91ab4fefcdb3d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b14d39886018fa627fda1a93b8fea3') in 0.052208 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Crater14bcg.mat
+  artifactKey: Guid(0b3b87181748ffc4f9b80c25a3b18d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Crater14bcg.mat using Guid(0b3b87181748ffc4f9b80c25a3b18d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c3492b3943ec297d48bb034579fe66') in 0.030268 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Flare4cg.mat
+  artifactKey: Guid(8a6e728ea97b2bf4399f7190a57a3735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Flare4cg.mat using Guid(8a6e728ea97b2bf4399f7190a57a3735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dce2c1aafc9d4f4f8396cdd630e3276') in 0.029433 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Electricity2be.mat
+  artifactKey: Guid(c5c586ae260ffaf4aad3e21714c0ae01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Electricity2be.mat using Guid(c5c586ae260ffaf4aad3e21714c0ae01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08a793451866a6a6e4a0366150950362') in 0.026785 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Circle41cg.mat
+  artifactKey: Guid(54a6c1f6ac7494944a32a1d6fd599997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Circle41cg.mat using Guid(54a6c1f6ac7494944a32a1d6fd599997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84fe2bea1a48c6b00564a8fee2619f1f') in 0.023067 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Electricity1be.mat
+  artifactKey: Guid(c82c529f088cef640b1944f91e09ca72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Electricity1be.mat using Guid(c82c529f088cef640b1944f91e09ca72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ea6086ae7bd4ff4adf1fecd0c5900c') in 0.014220 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Arrow6bcg.mat
+  artifactKey: Guid(ed60593b91fad7941812dc8476fa8d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Arrow6bcg.mat using Guid(ed60593b91fad7941812dc8476fa8d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906d81311dc93c48c871a0c1968b72fc') in 0.019668 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Flash3cg.mat
+  artifactKey: Guid(2f061e69d76c79748883dd593a7e74c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Flash3cg.mat using Guid(2f061e69d76c79748883dd593a7e74c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14172dbcd889a4acbb0b35901b8af47') in 0.015515 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Flash7bcg.mat
+  artifactKey: Guid(72e41a54155def64eaed7ce14a43d450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Flash7bcg.mat using Guid(72e41a54155def64eaed7ce14a43d450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6dd44b7113c8be1021433658c7852e') in 0.016450 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Flare6cg.mat
+  artifactKey: Guid(82f16bfe1d124c54e877ead985da0dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Flare6cg.mat using Guid(82f16bfe1d124c54e877ead985da0dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d96886b6d9298896ddee20e3a28b1f') in 0.015451 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.309862 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Flash21bcg.mat
+  artifactKey: Guid(7dad299f9caed054ea10097fd11f0a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Flash21bcg.mat using Guid(7dad299f9caed054ea10097fd11f0a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4365e661b5c673feca1d4c1560cc797') in 0.016841 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Floor2.mat
+  artifactKey: Guid(90b5efb40f4976c42adf1ee90650c8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Floor2.mat using Guid(90b5efb40f4976c42adf1ee90650c8bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7351a1e972b023958824ad9038504bb6') in 0.596107 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/HPL2cg.mat
+  artifactKey: Guid(1b5f613319e0f324c9637cfac64149e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/HPL2cg.mat using Guid(1b5f613319e0f324c9637cfac64149e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef68fad38d6a1af8576dbf5a16b4b3c0') in 0.024116 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Glow1cg.mat
+  artifactKey: Guid(12fb1d84a82a2de4f8b3e8b1f2747b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Glow1cg.mat using Guid(12fb1d84a82a2de4f8b3e8b1f2747b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a2ecbaf67b7126d64b525187c76e729') in 0.015150 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Heart3bcg.mat
+  artifactKey: Guid(e27b1a20acd55c5498257a9c56259be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Heart3bcg.mat using Guid(e27b1a20acd55c5498257a9c56259be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9c54579e9864c40e23772e76f48b4f') in 0.014419 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.828213 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Mask23cg.mat
+  artifactKey: Guid(6df1fc7e055a3a449a00125fb6ff7325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Mask23cg.mat using Guid(6df1fc7e055a3a449a00125fb6ff7325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e857cbbda734238875945900a563d866') in 0.014093 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Mask33bcg.mat
+  artifactKey: Guid(53619e81bdf418140ac9398f8097a089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Mask33bcg.mat using Guid(53619e81bdf418140ac9398f8097a089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17c71ecf793b8f000ad4bc721ee01eb') in 0.015453 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Point20bcg.mat
+  artifactKey: Guid(540c41a60cf49424091b0262d3b77fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Point20bcg.mat using Guid(540c41a60cf49424091b0262d3b77fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4280700ff7a7df556f2f5503bad7b0ea') in 0.016247 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Point12cg.mat
+  artifactKey: Guid(9aaa13d175bcf1c4b8acc4d930ee06ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Point12cg.mat using Guid(9aaa13d175bcf1c4b8acc4d930ee06ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3921aa4fb57c57790f36257c459dfc7e') in 0.016143 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/MuzzleFlash2cg.mat
+  artifactKey: Guid(503813d282098fb46936710f053bb835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/MuzzleFlash2cg.mat using Guid(503813d282098fb46936710f053bb835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c0b6e8d0c877faff6d75a902caa964') in 0.014016 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.004517 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Romb3cg.mat
+  artifactKey: Guid(c10ff1214bc1c924182ac2e22d4f5cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Romb3cg.mat using Guid(c10ff1214bc1c924182ac2e22d4f5cda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1677182e7dd0029036188f50d2c6df37') in 0.012455 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Smoke5bcg.mat
+  artifactKey: Guid(906522bf32691f9408c7e24cc0ee30a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Smoke5bcg.mat using Guid(906522bf32691f9408c7e24cc0ee30a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b254229631e46913009b2f3bef37556') in 0.016164 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Semicircle6bcg.mat
+  artifactKey: Guid(e10acc4b68a4e7b4eaa75206eacf0d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Semicircle6bcg.mat using Guid(e10acc4b68a4e7b4eaa75206eacf0d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee7a34c52bd0c158c291f850a7a98e4') in 0.014219 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.460557 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/SmokeBCG.mat
+  artifactKey: Guid(ad117d9f7f62bb94690a823d11b394ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/SmokeBCG.mat using Guid(ad117d9f7f62bb94690a823d11b394ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5743953bbb9ae35052646e1a08b1462a') in 0.013216 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Snow4cg.mat
+  artifactKey: Guid(14d86213d7eb66d488a487dc38bc79d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Snow4cg.mat using Guid(14d86213d7eb66d488a487dc38bc79d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540d874d5b4fe898413035f18edf54bd') in 0.013903 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail22cg.mat
+  artifactKey: Guid(7154a27ca4f209047bbd02657bbbc16c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail22cg.mat using Guid(7154a27ca4f209047bbd02657bbbc16c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed38d6af3e23c9f490db3d9275fd8c27') in 0.014218 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail29.2cg.mat
+  artifactKey: Guid(464385e721d14ff458adeff2b5f605b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail29.2cg.mat using Guid(464385e721d14ff458adeff2b5f605b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73ec8b8172c5b851e93e719ed68b3eb6') in 0.015763 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail37bcg.mat
+  artifactKey: Guid(22747fc32db5efa40ae404c98e4ebe78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail37bcg.mat using Guid(22747fc32db5efa40ae404c98e4ebe78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7808d176e93d93b713290133b63721e5') in 0.020934 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail42bcg.mat
+  artifactKey: Guid(2e2ec68e64e5126489ef901ef2719fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail42bcg.mat using Guid(2e2ec68e64e5126489ef901ef2719fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8654858b6475c1921c60257d1d79e962') in 0.022626 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail21cg.mat
+  artifactKey: Guid(60c4f99d55be7ee44a8521d1da5a59c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail21cg.mat using Guid(60c4f99d55be7ee44a8521d1da5a59c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e95e80f0f46cf61a18ad23087387e88') in 0.013525 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail26bcg.mat
+  artifactKey: Guid(564274271c0dac34e96edb9a9aa5aff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Trail26bcg.mat using Guid(564274271c0dac34e96edb9a9aa5aff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa979811561563c1222d27fbb9d73e35') in 0.017832 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/WaterSplash2cg.mat
+  artifactKey: Guid(0dbf04791027e924fac9ee9345b294a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/WaterSplash2cg.mat using Guid(0dbf04791027e924fac9ee9345b294a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfea9d9c90c93ce58e882aa31b2668c1') in 0.026594 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Waves17cg.mat
+  artifactKey: Guid(9047e616b5b02b745a5ae38f15567adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Waves17cg.mat using Guid(9047e616b5b02b745a5ae38f15567adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82db21218227b7f6a460e2eb69171d7f') in 0.017129 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/TrailShader3.mat
+  artifactKey: Guid(867f4d679b3630e4bb5516b09bbe5bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/TrailShader3.mat using Guid(867f4d679b3630e4bb5516b09bbe5bbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec2b4557186f8dd41ccb058afc8f6d4') in 0.017576 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Waves22cg.mat
+  artifactKey: Guid(99d404cd1f3c08949850068fe920e052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Waves22cg.mat using Guid(99d404cd1f3c08949850068fe920e052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ff155e5b0a424b049ed657e8585ac6') in 0.021214 seconds 
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Triangle1bcg.mat
+  artifactKey: Guid(df3cdebd9d538e345a09d02147d30656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Triangle1bcg.mat using Guid(df3cdebd9d538e345a09d02147d30656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80ce1d94c14608519e265b808fe3115e') in 0.014891 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Star3bcg.mat
+  artifactKey: Guid(9509d65f44bec55498ba99d0a564e28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/Star3bcg.mat using Guid(9509d65f44bec55498ba99d0a564e28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c8b93b59d66ff1ce1cc3c9c4c5cc07') in 0.013743 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/TrailShader2.mat
+  artifactKey: Guid(be550ac7871705e49a994e8101b4c33f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hovl Studio/AAA Projectiles Vol 1/Materials/TrailShader2.mat using Guid(be550ac7871705e49a994e8101b4c33f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d544f36ef59801eac94c669a5f40c5f') in 0.017352 seconds 
+Number of asset objects unloaded after import = 4
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

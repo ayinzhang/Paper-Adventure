@@ -150,9 +150,10 @@ MonoBehaviour:
   dmg: 10
   speed: 15
   time: 5
-  cd: 0.5
+  cd: 3
   type: 1
-  bulletNum: 1
+  bulletNum: -1
+  targetTrans: {fileID: 0}
 --- !u!1 &7736015123599603282
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +258,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0, g: 0, b: 0, a: 0.49019608}
+      key0: {r: 0, g: 0, b: 0, a: 0.3137255}
       key1: {r: 1, g: 1, b: 1, a: 0.49019608}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}

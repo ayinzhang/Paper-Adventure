@@ -9,16 +9,24 @@ public class Enemy2D : MonoBehaviour
     int bulletNum; float dis, subLR;
     public float speed = 10f;
     public GameObject[] bullets;
-    public (float, bool)[] bulletDatas;
+    public (int, float, bool)[] bulletDatas;
 
     void Start()
     {
         gm = GameObject.Find("GameManager").GetComponent<GameManager2D>();
         playerTrans = GameObject.Find("Player").transform;
 
-        bulletDatas = new (float, bool)[bullets.Length];
+        bulletDatas = new (int, float, bool)[bullets.Length];
         for (int i = 0; i < bullets.Length; i++)
-            bulletDatas[i] = (bullets[i].GetComponent<Bullet2D>().cd, true);
+        {
+            bulletDatas[i] = (-1, bullets[i].GetComponentInChildren<Bullet2D>().cd, true);
+            for (int j = 0; j < gm.bullets.Length; j++)
+                if (bullets[i].name == gm.bullets[j].name)
+                {
+                    bulletDatas[i].Item1 = j;
+                    break;
+                }
+        }
 
         StartCoroutine(ChangeDirAndWeapon());
     }
@@ -31,22 +39,27 @@ public class Enemy2D : MonoBehaviour
                subDir = Vector3.Cross(toDir, new Vector3(0, 0, 1));
         transform.position += speed * Time.deltaTime * (fac * toDir + subLR * subFac * subDir);
 
-        if (bulletDatas[bulletNum].Item2)
+        if (bulletDatas[bulletNum].Item3)
         {
             StartCoroutine(CD(bulletNum));
-            GameObject bullet = bulletNum == 0 ? gm.bulletPools[0].Get() : Instantiate(bullets[bulletNum]);
-            bullet.layer = LayerMask.NameToLayer("EnemyBullet");
-            bullet.GetComponent<Bullet2D>().targetTrans = playerTrans;
-            bullet.transform.position = transform.position + 1.5f * toDir;
+            GameObject bullet = bulletDatas[bulletNum].Item1 != -1 ? gm.bulletPools[bulletDatas[bulletNum].Item1].Get() : Instantiate(bullets[bulletNum]);
+            bullet.transform.position = transform.position + toDir;
             bullet.transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(new Vector2(1, 0), toDir));
+            Bullet2D[] bulletGroup = bullet.GetComponentsInChildren<Bullet2D>();
+            for (int i = 0; i < bulletGroup.Length; i++)
+            {
+                bulletGroup[i].targetTrans = playerTrans;
+                bulletGroup[i].gameObject.layer = LayerMask.NameToLayer("EnemyBullet");
+            }
+
         }
     }
 
     IEnumerator CD(int bulletNum)
     {
-        bulletDatas[bulletNum].Item2 = false;
-        yield return new WaitForSeconds(bulletDatas[bulletNum].Item1);
-        bulletDatas[bulletNum].Item2 = true;
+        bulletDatas[bulletNum].Item3 = false;
+        yield return new WaitForSeconds(bulletDatas[bulletNum].Item2);
+        bulletDatas[bulletNum].Item3 = true;
     }
 
     IEnumerator ChangeDirAndWeapon()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletEffect2D : MonoBehaviour
 {
-    GameManager2D gm;
+    BulletGroup2D bulletGroup;
     public float time = 0.5f;
 
     void OnEnable()
@@ -14,12 +14,12 @@ public class BulletEffect2D : MonoBehaviour
 
     void Start()
     {
-        gm = GameObject.Find("GameManager").GetComponent<GameManager2D>();
+        bulletGroup = gameObject.GetComponentInParent<BulletGroup2D>();
     }
 
     IEnumerator Recycle()
     {
         yield return new WaitForSeconds(time);
-        gm.bulletEffectPools[0].Release(gameObject);
+        gameObject.SetActive(false); bulletGroup.RecycleEffect();
     }
 }

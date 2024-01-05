@@ -7,36 +7,28 @@ public class Bullet2D : MonoBehaviour
     public float dmg = 10, speed = 17, time = 3, cd = 0.5f;
     public enum BulletType { Normal, Track};
     public BulletType type;
-    [HideInInspector]
-    public int bulletNum;
-    [HideInInspector]
-    public Transform targetTrans;
-    GameManager2D gm;
-    TrailRenderer tr;
+    public GameObject effect;
+    [HideInInspector] public int bulletNum = -1;
+    [HideInInspector] public Transform targetTrans;
     float t;
-
-    void Start()
-    {
-        gm = GameObject.Find("GameManager").GetComponent<GameManager2D>();
-        tr = gameObject.GetComponentInChildren<TrailRenderer>();
-    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject obj = collision.gameObject;
+        Vector3 collisionPoint = new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y, 0);
         switch (obj.tag)
         {
             case "Bullet":
                 if ((dmg -= obj.GetComponent<Bullet2D>().dmg) <= 0)
-                    Recycle();
+                    Recycle(collisionPoint);
                 break;
             case "Player":
                 if (targetTrans.name.Equals("Player"))
-                    Recycle();
+                    Recycle(collisionPoint);
                 break;
             case "Enemy":
                 if (targetTrans.name.Equals("Enemy"))
-                    Recycle();
+                    Recycle(collisionPoint);
                 break;
         }
     }
@@ -50,21 +42,19 @@ public class Bullet2D : MonoBehaviour
                 break;
             case BulletType.Track:
                 Vector3 toDir = (targetTrans.position - transform.position).normalized;
-                transform.right = Vector3.Slerp(transform.right, toDir, Mathf.Min(1, 1.5f / Vector3.Angle(toDir, transform.right)));
+                transform.right = Vector3.RotateTowards(transform.right, toDir, 0.03f, 0);
                 transform.position += speed * Time.deltaTime * transform.right;
                 break;
         }
 
-        if ((t += Time.deltaTime) >= time) 
-            if (bulletNum == 0) { t = 0; gm.bulletPools[bulletNum].Release(gameObject); }
-            else Destroy(gameObject);
+        if ((t += Time.deltaTime) >= time) Recycle(transform.localPosition);
     }
 
-    void Recycle()
+    void Recycle(Vector3 collisionPoint)
     {
-        t = 0;
-        GameObject effect = gm.bulletEffectPools[0].Get();
-        effect.transform.position = transform.position;
-        if (bulletNum == 0) gm.bulletPools[0].Release(gameObject); else Destroy(gameObject);
+        t = 0; gameObject.SetActive(false);
+        effect.gameObject.transform.position = collisionPoint;
+        effect.gameObject.transform.rotation = transform.rotation;
+        effect.SetActive(true);
     }
 }
