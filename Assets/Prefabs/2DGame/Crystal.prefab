@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4478347855102178926}
   m_Layer: 0
   m_Name: Crystal
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,10 +148,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 10
-  speed: 15
+  speed: 13
   time: 5
   cd: 3
   type: 1
+  effect: {fileID: 0}
   bulletNum: -1
   targetTrans: {fileID: 0}
 --- !u!1 &7736015123599603282

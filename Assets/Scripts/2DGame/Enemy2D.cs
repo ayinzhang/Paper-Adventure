@@ -31,6 +31,18 @@ public class Enemy2D : MonoBehaviour
         StartCoroutine(ChangeDirAndWeapon());
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Vector3 collisionPoint = new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y, 0);
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            GameObject effect = gm.effectPools[0].Get();
+            effect.transform.parent = transform;
+            effect.transform.position = collisionPoint;
+            effect.transform.right = (collisionPoint - transform.position).normalized;
+        }
+    }
+
     void Update()
     {
         float fac = Mathf.Clamp((transform.position - playerTrans.position).magnitude - dis, -4, 4) / 4,
@@ -43,7 +55,7 @@ public class Enemy2D : MonoBehaviour
         {
             StartCoroutine(CD(bulletNum));
             GameObject bullet = bulletDatas[bulletNum].Item1 != -1 ? gm.bulletPools[bulletDatas[bulletNum].Item1].Get() : Instantiate(bullets[bulletNum]);
-            bullet.transform.position = transform.position + toDir;
+            bullet.transform.position = transform.position + 1.5f * toDir;
             bullet.transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(new Vector2(1, 0), toDir));
             Bullet2D[] bulletGroup = bullet.GetComponentsInChildren<Bullet2D>();
             for (int i = 0; i < bulletGroup.Length; i++)

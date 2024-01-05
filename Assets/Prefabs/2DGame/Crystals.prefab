@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8584534994908650378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -76,7 +76,7 @@ PrefabInstance:
     - target: {fileID: 2819674534877011290, guid: a7b0de1bdecad5741857bb1387ac91f4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2819674534877011290, guid: a7b0de1bdecad5741857bb1387ac91f4,
         type: 3}
@@ -218,6 +218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BulletEffect
       objectReference: {fileID: 0}
+    - target: {fileID: 583717712974533373, guid: fb2d6572efa8e7746ac9e38d91e9b2a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb2d6572efa8e7746ac9e38d91e9b2a1, type: 3}
 --- !u!4 &2132548594163679507 stripped
@@ -314,6 +319,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BulletEffect
       objectReference: {fileID: 0}
+    - target: {fileID: 583717712974533373, guid: fb2d6572efa8e7746ac9e38d91e9b2a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb2d6572efa8e7746ac9e38d91e9b2a1, type: 3}
 --- !u!4 &2143463886032387276 stripped
@@ -353,7 +363,7 @@ PrefabInstance:
     - target: {fileID: 2819674534877011290, guid: a7b0de1bdecad5741857bb1387ac91f4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2819674534877011290, guid: a7b0de1bdecad5741857bb1387ac91f4,
         type: 3}
@@ -438,7 +448,7 @@ PrefabInstance:
     - target: {fileID: 2819674534877011290, guid: a7b0de1bdecad5741857bb1387ac91f4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 2819674534877011290, guid: a7b0de1bdecad5741857bb1387ac91f4,
         type: 3}
@@ -579,6 +589,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BulletEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 583717712974533373, guid: fb2d6572efa8e7746ac9e38d91e9b2a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb2d6572efa8e7746ac9e38d91e9b2a1, type: 3}

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8575860356741958881}
   m_Layer: 0
   m_Name: Arror
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,10 +149,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 10
-  speed: 17
+  speed: 18
   time: 3
   cd: 0.5
   type: 0
+  effect: {fileID: 0}
   bulletNum: -1
   targetTrans: {fileID: 0}
 --- !u!199 &1149521103402688024

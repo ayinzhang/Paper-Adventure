@@ -32,6 +32,18 @@ public class Player2D : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Vector3 collisionPoint = new Vector3(collision.contacts[0].point.x, collision.contacts[0].point.y, 0);
+        if(collision.gameObject.CompareTag("Bullet"))
+        {
+            GameObject effect = gm.effectPools[0].Get();
+            effect.transform.parent = transform;
+            effect.transform.position = collisionPoint;
+            effect.transform.right = (collisionPoint - transform.position).normalized;
+        }
+    }
+
     void Update()
     {
         transform.position += speed * Time.deltaTime * new Vector3(leftStick.Horizontal, leftStick.Vertical, 0);
@@ -40,7 +52,7 @@ public class Player2D : MonoBehaviour
         {
             StartCoroutine(CD(0));
             GameObject bullet = gm.bulletPools[0].Get();
-            bullet.transform.position = transform.position + new Vector3(mainStick.Horizontal, mainStick.Vertical, 0).normalized;
+            bullet.transform.position = transform.position + 1.5f * new Vector3(mainStick.Horizontal, mainStick.Vertical, 0).normalized;
             bullet.transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(new Vector2(1, 0), new Vector2(mainStick.Horizontal, mainStick.Vertical)));
             Bullet2D[] bulletGroup = bullet.GetComponentsInChildren<Bullet2D>();
             for (int i = 0; i < bulletGroup.Length; i++)
