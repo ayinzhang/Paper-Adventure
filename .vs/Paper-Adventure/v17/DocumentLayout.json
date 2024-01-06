@@ -11,28 +11,28 @@
       "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\2dgame\\player2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|E:\\Paper-Adventure\\assets\\scripts\\2dgame\\bulleteffect2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\2dgame\\bulleteffect2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|e:\\paper-adventure\\assets\\scripts\\2dgame\\gamemanager2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\2dgame\\gamemanager2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|E:\\Paper-Adventure\\assets\\scripts\\2dgame\\bulletgroup2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\2dgame\\bulletgroup2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|E:\\Paper-Adventure\\assets\\scripts\\common\\joystick.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\joystick.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|E:\\Paper-Adventure\\assets\\scripts\\2dgame\\bullet2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\2dgame\\bullet2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|e:\\paper-adventure\\assets\\scripts\\2dgame\\effect2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|E:\\Paper-Adventure\\assets\\scripts\\2dgame\\effect2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\2dgame\\effect2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|E:\\Paper-Adventure\\assets\\scripts\\2dgame\\gamemanager2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\2dgame\\gamemanager2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|E:\\Paper-Adventure\\assets\\scripts\\2dgame\\bulletgroup2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\2dgame\\bulletgroup2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|E:\\Paper-Adventure\\assets\\scripts\\common\\joystick.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\joystick.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|E:\\Paper-Adventure\\assets\\scripts\\2dgame\\bulleteffect2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{965C9761-3278-FBB0-D220-5DC83D32CE97}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\2dgame\\bulleteffect2d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,13 +46,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "GameManager2D.cs",
               "DocumentMoniker": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\GameManager2D.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\2DGame\\GameManager2D.cs",
               "ToolTip": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\GameManager2D.cs",
               "RelativeToolTip": "Assets\\Scripts\\2DGame\\GameManager2D.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAB4AAAAxAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-28T10:07:09.059Z",
               "EditorCaption": ""
@@ -65,7 +65,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\2DGame\\Player2D.cs",
               "ToolTip": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\Player2D.cs",
               "RelativeToolTip": "Assets\\Scripts\\2DGame\\Player2D.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAADYAAABEAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAEEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-27T13:17:02.897Z",
               "EditorCaption": ""
@@ -78,7 +78,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\2DGame\\Enemy2D.cs",
               "ToolTip": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\Enemy2D.cs",
               "RelativeToolTip": "Assets\\Scripts\\2DGame\\Enemy2D.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAAACYAAAAsAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEEAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-01-01T13:03:21.992Z",
               "EditorCaption": ""
@@ -91,27 +91,26 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\2DGame\\Bullet2D.cs",
               "ToolTip": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\Bullet2D.cs",
               "RelativeToolTip": "Assets\\Scripts\\2DGame\\Bullet2D.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACsAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-28T09:17:31.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "BulletGroup2D.cs",
               "DocumentMoniker": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\BulletGroup2D.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\2DGame\\BulletGroup2D.cs",
               "ToolTip": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\BulletGroup2D.cs",
               "RelativeToolTip": "Assets\\Scripts\\2DGame\\BulletGroup2D.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAABQAAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAYwBQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-05T01:50:34.135Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-01-05T01:50:34.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "BulletEffect2D.cs",
               "DocumentMoniker": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\BulletEffect2D.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\2DGame\\BulletEffect2D.cs",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "Assets\\Scripts\\2DGame\\BulletEffect2D.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-31T11:28:52.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2023-12-31T11:28:52.29Z"
             },
             {
               "$type": "Document",
@@ -130,20 +128,19 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\2DGame\\Effect2D.cs",
               "ToolTip": "E:\\Paper-Adventure\\Assets\\Scripts\\2DGame\\Effect2D.cs",
               "RelativeToolTip": "Assets\\Scripts\\2DGame\\Effect2D.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAcAAAAGAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-05T14:39:35.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-01-05T14:39:35.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Joystick.cs",
               "DocumentMoniker": "E:\\Paper-Adventure\\Assets\\Scripts\\Common\\Joystick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\Joystick.cs",
               "ToolTip": "E:\\Paper-Adventure\\Assets\\Scripts\\Common\\Joystick.cs",
               "RelativeToolTip": "Assets\\Scripts\\Common\\Joystick.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAAACwAAAAKAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAABwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-28T13:40:16.656Z",
               "EditorCaption": ""

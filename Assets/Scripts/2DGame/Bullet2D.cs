@@ -19,8 +19,7 @@ public class Bullet2D : MonoBehaviour
         switch (obj.tag)
         {
             case "Bullet":
-                if ((dmg -= obj.GetComponent<Bullet2D>().dmg) <= 0)
-                    Recycle(collisionPoint);
+                Recycle(collisionPoint);
                 break;
             case "Player":
                 if (targetTrans.name.Equals("Player"))
@@ -42,7 +41,7 @@ public class Bullet2D : MonoBehaviour
                 break;
             case BulletType.Track:
                 Vector3 toDir = (targetTrans.position - transform.position).normalized;
-                transform.right = Vector3.RotateTowards(transform.right, toDir, 0.03f, 0);
+                transform.right = Vector3.RotateTowards(transform.right, toDir, 0.05f, 0);
                 transform.position += speed * Time.deltaTime * transform.right;
                 break;
         }

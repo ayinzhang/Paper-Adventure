@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6174390132675896162}
   - component: {fileID: 6174390132675896165}
-  - component: {fileID: 6174390132675896161}
+  - component: {fileID: 1119893403983375708}
   - component: {fileID: 6174390132675896163}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -86,8 +86,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &6174390132675896161
-CircleCollider2D:
+--- !u!61 &1119893403983375708
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,8 +100,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 2.56
+  m_Size: {x: 5.12, y: 5.12}
+  m_EdgeRadius: 0
 --- !u!114 &6174390132675896163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,7 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e5e340445369f46a587bcb824fd5f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletNum: 0
+  hp: 100
   speed: 10
-  bullet:
-  - {fileID: 5724412182872618077, guid: 2e9662a1b228d364da2cea17cc9bffa1, type: 3}
+  bullets:
+  - {fileID: 1471604635644449633, guid: 86d61fc4b7f686243a5686ec65a6e735, type: 3}
+  - {fileID: 8584534994908650378, guid: 1bbf057376aae73499a9c1513f2ab551, type: 3}

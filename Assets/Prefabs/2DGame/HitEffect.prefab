@@ -4826,4 +4826,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectTime: 0.5
-  effectNum: 0
+  effectNum: -1
