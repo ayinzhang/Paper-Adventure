@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Player2D : MonoBehaviour
 {
-    GameManager2D gm; CinemachineVirtualCamera camera;
+    GameManager2D gm; Bullet2D bullet; 
+    CinemachineVirtualCamera camera;
     Joystick leftStick, mainStick, subStick;
     Transform enemyTrans; SpriteRenderer render;
     float h;
@@ -15,7 +16,7 @@ public class Player2D : MonoBehaviour
 
     void Start()
     {
-        h = hp;
+        h = hp; bullet = bullets[1].GetComponent<Bullet2D>();
         render = gameObject.GetComponent<SpriteRenderer>();
         gm = GameObject.Find("GameManager").GetComponent<GameManager2D>();
         enemyTrans = GameObject.Find("Enemy").GetComponent<Transform>();
@@ -78,7 +79,7 @@ public class Player2D : MonoBehaviour
                 bulletGroup[i].gameObject.layer = LayerMask.NameToLayer("PlayerBullet");
             }
         }
-        else if (bulletDatas[1].Item3 && (subStick.Horizontal != 0 || subStick.Vertical != 0))
+        else if (bullet.type <= Bullet2D.BulletType.Track && bulletDatas[1].Item3 && (subStick.Horizontal != 0 || subStick.Vertical != 0))
         {
             StartCoroutine(CD(1));
             GameObject bullet = bulletDatas[1].Item1 != -1 ? gm.bulletPools[bulletDatas[1].Item1].Get(): Instantiate(bullets[1]);
@@ -89,6 +90,13 @@ public class Player2D : MonoBehaviour
             {
                 bulletGroup[i].targetTrans = enemyTrans;
                 bulletGroup[i].gameObject.layer = LayerMask.NameToLayer("PlayerBullet");
+            }
+        }
+        else if(bullet.type == Bullet2D.BulletType.Laser)
+        {
+            if(bulletDatas[1].Item3 && (subStick.Horizontal != 0 || subStick.Vertical != 0))
+            {
+
             }
         }
     }

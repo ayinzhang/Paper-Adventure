@@ -23,7 +23,7 @@ public class GameManager2D : MonoBehaviour
 
     void Start()
     {
-        player = Instantiate(players[Random.Range(0, players.Length)]); player.name = "Player";
+        player = Instantiate(players[Random.Range(1, players.Length)]); player.name = "Player";
         enemy = Instantiate(enemys[Random.Range(0, enemys.Length)]); enemy.name = "Enemy";
         bulletPools = new ObjectPool[bullets.Length];
         effectPools = new ObjectPool[effects.Length];

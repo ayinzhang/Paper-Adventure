@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet2D : MonoBehaviour
 {
     public float dmg = 10, speed = 17, time = 3, cd = 0.5f;
-    public enum BulletType { Normal, Track};
+    public enum BulletType { Normal, Track, Laser};
     public BulletType type;
     public GameObject effect;
     [HideInInspector] public int bulletNum = -1;
@@ -19,7 +19,8 @@ public class Bullet2D : MonoBehaviour
         switch (obj.tag)
         {
             case "Bullet":
-                Recycle(collisionPoint);
+                if (type <= BulletType.Track)
+                    Recycle(collisionPoint);
                 break;
             case "Player":
                 if (targetTrans.name.Equals("Player"))
@@ -42,6 +43,9 @@ public class Bullet2D : MonoBehaviour
             case BulletType.Track:
                 Vector3 toDir = (targetTrans.position - transform.position).normalized;
                 transform.right = Vector3.RotateTowards(transform.right, toDir, 0.05f, 0);
+                transform.position += speed * Time.deltaTime * transform.right;
+                break;
+            case BulletType.Laser:
                 transform.position += speed * Time.deltaTime * transform.right;
                 break;
         }
